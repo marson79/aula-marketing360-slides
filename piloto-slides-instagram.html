@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Piloto Slides — Canal Instagram</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0a2540; --azul-m:#13345c; --ciano:#00b4cc; --ciano-c:#e0f7fa;
+    --fundo:#f7f8fa; --borda:#e2e6ea; --texto:#3a4452; --cinza-texto:#8a93a0;
+    --verde:#16a34a; --verde-c:#dcfce7; --vermelho:#dc2626; --vermelho-c:#fee2e2;
+    --amarelo:#f5c842; --roxo:#7c3aed; --roxo-c:#ede9fe; --laranja:#ea580c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:#444;}
+  .slide{
+    width:1920px;height:1080px;
+    background:#fff;
+    position:relative;
+    overflow:hidden;
+    margin:0 auto 24px;
+    display:flex;flex-direction:column;
+    justify-content:center;
+    padding:90px 110px;
+  }
+  .slide-num{position:absolute;bottom:32px;right:48px;font-size:14px;color:var(--cinza-texto);font-weight:600;}
+  .eyebrow{font-size:17px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--ciano);margin-bottom:18px;}
+  h1{font-family:'Fraunces',serif;font-size:56px;font-weight:700;color:var(--azul);line-height:1.15;margin-bottom:20px;}
+  h2{font-family:'Fraunces',serif;font-size:38px;font-weight:600;color:var(--azul);line-height:1.2;}
+  .sub{font-size:22px;color:var(--texto);line-height:1.5;}
+  .badge{display:inline-flex;align-items:center;gap:10px;background:var(--azul);color:#fff;padding:10px 22px;border-radius:30px;font-size:16px;font-weight:700;}
+  .fill-line{border-bottom:2px dashed var(--borda);height:36px;margin-top:8px;}
+  .card{background:var(--fundo);border-radius:18px;padding:32px 36px;}
+  .pill{display:inline-block;padding:6px 16px;border-radius:20px;font-size:14px;font-weight:700;}
+  /* dark slide variant */
+  .slide.dark{background:linear-gradient(135deg,#0f172a,#1a2f4e);}
+  .slide.dark h1, .slide.dark h2{color:#fff;}
+  .slide.dark .sub{color:rgba(255,255,255,.65);}
+  .slide.dark .eyebrow{color:var(--ciano);}
+</style>
+</head>
+<body>
+
+<!-- ════════ SLIDE 1 — ABERTURA DO CANAL ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Abertura">
+  <div style="display:flex;align-items:center;gap:28px;margin-bottom:48px;">
+    <div style="width:96px;height:96px;border-radius:24px;background:linear-gradient(135deg,#f58529,#dd2a7b,#8134af);display:flex;align-items:center;justify-content:center;font-size:48px;flex-shrink:0;">📸</div>
+    <div>
+      <div class="eyebrow" style="color:var(--ciano);">Canal 01 — Aula Imersiva</div>
+      <h1 style="margin-bottom:6px;">Instagram</h1>
+      <div class="sub">Vitrine técnica + autoridade + método completo para laboratórios</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-bottom:32px;">
+    <div style="font-size:15px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--texto);margin-bottom:24px;">⏱ Roteiro desta aula — 65 minutos</div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="display:grid;grid-template-columns:200px 1fr 110px;gap:20px;align-items:center;padding:18px 24px;background:var(--azul);border-radius:14px;">
+        <span style="font-weight:700;color:var(--ciano);font-size:18px;">Abertura</span><span style="color:rgba(255,255,255,.85);font-size:18px;">Dinâmica "Raio-X ao Vivo" — autodiagnóstico + 3 perfis da sala + 3 referências</span><span style="color:rgba(255,255,255,.5);font-size:16px;">25 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:200px 1fr 110px;gap:20px;align-items:center;padding:18px 24px;background:#fff;border:1px solid var(--borda);border-radius:14px;">
+        <span style="font-weight:700;color:var(--ciano);font-size:18px;">Conceito</span><span style="color:var(--texto);font-size:18px;">O filtro do Dr. Rafael — como pensar antes de postar</span><span style="color:var(--cinza-texto);font-size:16px;">5 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:200px 1fr 110px;gap:20px;align-items:center;padding:18px 24px;background:#fff;border:1px solid var(--borda);border-radius:14px;">
+        <span style="font-weight:700;color:var(--ciano);font-size:18px;">Técnica</span><span style="color:var(--texto);font-size:18px;">5 templates de post com estrutura completa</span><span style="color:var(--cinza-texto);font-size:16px;">15 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:200px 1fr 110px;gap:20px;align-items:center;padding:18px 24px;background:#fff;border:1px solid var(--borda);border-radius:14px;">
+        <span style="font-weight:700;color:var(--ciano);font-size:18px;">Análise</span><span style="color:var(--texto);font-size:18px;">Desconstrução ao vivo — 1 post ruim analisado em conjunto</span><span style="color:var(--cinza-texto);font-size:16px;">10 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:200px 1fr 110px;gap:20px;align-items:center;padding:18px 24px;background:#fff;border:1px solid var(--borda);border-radius:14px;">
+        <span style="font-weight:700;color:var(--ciano);font-size:18px;">Entrega</span><span style="color:var(--texto);font-size:18px;">Calendário de 30 dias preenchido — 12 posts planejados</span><span style="color:var(--cinza-texto);font-size:16px;">10 min</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">01</div>
+</div>
+
+<!-- ════════ SLIDE 2 — POR QUÊ + DADOS ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Por que este canal">
+  <div class="eyebrow">⚡ Por que este canal?</div>
+  <h2 style="margin-bottom:28px;">O dentista já está lá — você precisa estar pronto quando ele chegar</h2>
+  <div style="background:#fff;border-left:6px solid var(--laranja);border-radius:14px;padding:36px 40px;margin-bottom:40px;box-shadow:0 2px 12px rgba(0,0,0,.04);">
+    <p style="font-size:24px;color:var(--texto);line-height:1.6;">O dentista já está no Instagram — como profissional e como usuário. É onde ele <strong style="color:var(--azul);">busca referências técnicas, acompanha colegas e descobre fornecedores.</strong> Para o laboratório, é a vitrine mais poderosa disponível: uma foto de uma coroa de zircônia bem executada diz mais do que qualquer texto de vendas.</p>
+  </div>
+
+  <div style="display:flex;gap:24px;flex:1;">
+    <div style="flex:1;background:var(--ciano-c);border-radius:16px;padding:44px 36px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--azul);margin-bottom:14px;">134mi</div>
+      <div style="font-size:22px;color:var(--texto);font-weight:600;margin-bottom:22px;line-height:1.3;">usuários no Instagram Brasil</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">Se 0,001% fossem dentistas pesquisando lab agora → 134 perfis visitados. O seu aparece?</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:22px;">Meta Ads / We Are Social, 2024</div>
+    </div>
+    <div style="flex:1;background:var(--ciano-c);border-radius:16px;padding:44px 36px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--azul);margin-bottom:14px;">68%</div>
+      <div style="font-size:22px;color:var(--texto);font-weight:600;margin-bottom:22px;line-height:1.3;">pesquisam saúde bucal antes de escolher</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">Mais de 6 em cada 10 dentistas que chegam numa cidade nova vão pesquisar lab no Instagram.</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:22px;">ClinicaIdeal, 2025</div>
+    </div>
+    <div style="flex:1;background:var(--ciano-c);border-radius:16px;padding:44px 36px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--azul);margin-bottom:14px;">1h27</div>
+      <div style="font-size:22px;color:var(--texto);font-weight:600;margin-bottom:22px;line-height:1.3;">tempo médio diário no Instagram</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">O dentista passa quase 1h30 por dia rolando o feed. Seu lab pode aparecer nesse tempo — ou não.</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:22px;">Digital 2026 Report</div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px;background:var(--azul);border-radius:14px;padding:24px 32px;">
+    <span style="font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--ciano);">🎯 Objetivo</span>
+    <p style="font-size:20px;color:#fff;margin-top:6px;">Fazer o dentista perceber que seu laboratório é referência técnica antes mesmo de te conhecer pessoalmente.</p>
+  </div>
+  <div class="slide-num">02</div>
+</div>
+
+<!-- ════════ SLIDE 3 — DINÂMICA CABEÇALHO ════════ -->
+<div class="slide dark" data-document-role="page" data-label="Instagram — Dinâmica Raio-X intro">
+  <div style="display:flex;flex-direction:column;justify-content:center;height:100%;max-width:1400px;">
+    <div class="eyebrow">🔍 Abertura — Dinâmica Raio-X ao Vivo · 25 minutos</div>
+    <h1 style="margin-bottom:24px;">Três partes progressivas — do individual ao coletivo ao referencial</h1>
+    <p class="sub" style="font-size:26px;max-width:1100px;">Cada aluno confronta o próprio perfil antes de qualquer conceito. Depois analisamos juntos. Depois vemos onde queremos chegar. Nessa ordem — e não ao contrário.</p>
+    <div style="display:flex;gap:20px;margin-top:56px;">
+      <div style="background:rgba(255,255,255,.08);border-radius:16px;padding:28px 32px;flex:1;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--ciano);color:var(--azul);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;margin-bottom:16px;">A</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">5 min · individual</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;">Cada um analisa o próprio perfil</div>
+      </div>
+      <div style="background:rgba(255,255,255,.08);border-radius:16px;padding:28px 32px;flex:1;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--amarelo);color:var(--azul);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;margin-bottom:16px;">B</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">12 min · coletivo</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;">3 perfis da sala analisados juntos</div>
+      </div>
+      <div style="background:rgba(255,255,255,.08);border-radius:16px;padding:28px 32px;flex:1;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--verde);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;margin-bottom:16px;">C</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">8 min · inspiração</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;">3 laboratórios referência</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">03</div>
+</div>
+
+<!-- ════════ SLIDE 4 — PARTE A ════════ -->
+<div class="slide dark" data-document-role="page" data-label="Instagram — Dinâmica Parte A">
+  <div style="display:flex;align-items:center;gap:18px;margin-bottom:8px;">
+    <div style="background:var(--ciano);color:var(--azul);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;">A</div>
+    <div>
+      <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;">5 minutos · individual · em silêncio</div>
+      <div style="font-size:26px;font-weight:700;color:#fff;">Cada um analisa o próprio perfil</div>
+    </div>
+  </div>
+  <p class="sub" style="margin:24px 0 36px;max-width:1300px;">Abra o Instagram do seu laboratório agora. Responda as perguntas abaixo com honestidade — ninguém vai ver o que você escreveu.</p>
+
+  <div style="display:flex;flex-direction:column;gap:22px;margin-bottom:44px;">
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:32px 36px;font-size:24px;color:rgba(255,255,255,.9);display:flex;gap:24px;align-items:flex-start;line-height:1.5;">
+      <div style="background:var(--ciano);color:var(--azul);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:700;flex-shrink:0;">1</div>
+      <span>Pega o seu último post. Um implantodontista de 42 anos que nunca ouviu falar de você pararia de rolar o feed por causa desse post? Por quê sim ou por quê não?</span>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:32px 36px;font-size:24px;color:rgba(255,255,255,.9);display:flex;gap:24px;align-items:flex-start;line-height:1.5;">
+      <div style="background:var(--ciano);color:var(--azul);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:700;flex-shrink:0;">2</div>
+      <span>Lê sua bio em voz alta como se fosse a primeira vez. Em 5 segundos fica claro o que você faz, onde fica e como o dentista entra em contato?</span>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:32px 36px;font-size:24px;color:rgba(255,255,255,.9);display:flex;gap:24px;align-items:flex-start;line-height:1.5;">
+      <div style="background:var(--ciano);color:var(--azul);width:42px;height:42px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:19px;font-weight:700;flex-shrink:0;">3</div>
+      <span>Você tem depoimento de dentista fixado nos destaques? Foto de peça com legenda técnica nos últimos 3 posts? Qual foi a última vez que um dentista mandou DM?</span>
+    </div>
+  </div>
+
+  <div style="background:rgba(0,180,204,.08);border:1px solid rgba(0,180,204,.25);border-radius:14px;padding:32px 36px;">
+    <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ciano);margin-bottom:18px;">✍ O que eu preciso mudar no meu perfil</div>
+    <div style="border-bottom:2px dashed rgba(255,255,255,.3);height:54px;"></div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">04</div>
+</div>
+
+<!-- ════════ SLIDE 5 — PARTE B ════════ -->
+<div class="slide dark" data-document-role="page" data-label="Instagram — Dinâmica Parte B">
+  <div style="display:flex;align-items:center;gap:18px;margin-bottom:8px;">
+    <div style="background:var(--amarelo);color:var(--azul);width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;">B</div>
+    <div>
+      <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;">12 minutos · coletivo · tela grande</div>
+      <div style="font-size:26px;font-weight:700;color:#fff;">3 perfis da sala analisados juntos</div>
+    </div>
+  </div>
+  <p class="sub" style="margin:24px 0 32px;max-width:1300px;">O professor pede voluntários — com permissão — e acessa 3 perfis reais da turma no projetor. A sala toda analisa em voz alta, com o Dr. Rafael como guia.</p>
+
+  <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:40px;">
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:30px 34px;font-size:23px;color:rgba(255,255,255,.88);display:flex;gap:20px;line-height:1.5;">
+      <span style="color:var(--amarelo);font-weight:700;">→</span><span><strong style="color:#fff;">Para cada perfil, a turma responde:</strong> Bio clara ou genérica? Último post quando? Foto de qualidade? Legenda técnica ou emocional? O Dr. Rafael mandaria DM?</span>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:30px 34px;font-size:23px;color:rgba(255,255,255,.88);display:flex;gap:20px;line-height:1.5;">
+      <span style="color:var(--amarelo);font-weight:700;">→</span><span><strong style="color:#fff;">Depois de cada análise, a turma sugere:</strong> O que você mudaria agora mesmo nesse perfil? Uma ação concreta para hoje.</span>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:30px 34px;font-size:23px;color:rgba(255,255,255,.88);display:flex;gap:20px;line-height:1.5;">
+      <span style="color:var(--amarelo);font-weight:700;">→</span><span><strong style="color:#fff;">Narração do professor como Dr. Rafael:</strong> <em style="color:rgba(255,255,255,.6);">"Bio só com o nome. Último post há 2 meses. Esse lab ainda existe? Próximo."</em></span>
+    </div>
+  </div>
+
+  <div style="background:rgba(245,200,66,.08);border:1px solid rgba(245,200,66,.2);border-radius:14px;padding:30px 34px;">
+    <div style="font-size:19px;color:rgba(255,255,255,.75);font-style:italic;line-height:1.7;">Nota para o professor: escolha 1 perfil com problemas evidentes, 1 intermediário e 1 que já tem algo bom — para mostrar a progressão. O objetivo não é constranger, é iluminar o invisível.</div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">05</div>
+</div>
+
+<!-- ════════ SLIDE 6 — PARTE C ════════ -->
+<div class="slide dark" data-document-role="page" data-label="Instagram — Dinâmica Parte C">
+  <div style="display:flex;align-items:center;gap:18px;margin-bottom:8px;">
+    <div style="background:var(--verde);color:#fff;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;">C</div>
+    <div>
+      <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;">8 minutos · inspiração · tela grande</div>
+      <div style="font-size:26px;font-weight:700;color:#fff;">3 laboratórios referência — o que fazem certo</div>
+    </div>
+  </div>
+  <p class="sub" style="margin:20px 0 28px;">Não são exemplos inalcançáveis — são labs reais que aplicaram exatamente o que está nesta aula.</p>
+
+  <div style="display:flex;gap:24px;margin-bottom:32px;">
+    <div style="background:rgba(255,255,255,.07);border-radius:16px;padding:32px;flex:1;border-top:4px solid var(--verde);">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);margin-bottom:18px;">Lab Referência 1</div>
+      <div style="font-size:18px;color:rgba(255,255,255,.85);line-height:2.1;">✓ Bio com especialidade + cidade + CTA<br>✓ 3 posts por semana sem falhar<br>✓ Legendas 100% técnicas com prazo<br>✓ Destaques: peças, processo, depoimentos<br>✓ Nome do RT + nº CRO na bio</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:16px;padding:32px;flex:1;border-top:4px solid var(--ciano);">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ciano);margin-bottom:18px;">Lab Referência 2</div>
+      <div style="font-size:18px;color:rgba(255,255,255,.85);line-height:2.1;">✓ Reels de bastidor toda semana<br>✓ Carrosséis educativos para dentistas<br>✓ Depoimentos em vídeo dos parceiros<br>✓ Cases complexos com legenda detalhada<br>✓ Engajamento real nos comentários</div>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:16px;padding:32px;flex:1;border-top:4px solid var(--amarelo);">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--amarelo);margin-bottom:18px;">Lab Referência 3</div>
+      <div style="font-size:18px;color:rgba(255,255,255,.85);line-height:2.1;">✓ Especialização clara — só implante<br>✓ Linguagem exclusivamente B2B<br>✓ Frequência menor, qualidade maior<br>✓ Cada post tem CTA claro<br>✓ Estética coerente — identifica à distância</div>
+    </div>
+  </div>
+
+  <div style="background:rgba(22,163,74,.1);border:1px solid rgba(22,163,74,.25);border-radius:14px;padding:30px 34px;">
+    <div style="font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);margin-bottom:16px;">✍ Compromisso de saída desta dinâmica</div>
+    <div style="display:flex;gap:32px;">
+      <div style="flex:1;">
+        <span style="font-size:14px;color:rgba(255,255,255,.5);">Algo que vou copiar:</span>
+        <div style="border-bottom:2px dashed rgba(22,163,74,.4);height:38px;margin-top:6px;"></div>
+      </div>
+      <div style="flex:1;">
+        <span style="font-size:14px;color:rgba(255,255,255,.5);">Ação desta semana:</span>
+        <div style="border-bottom:2px dashed rgba(22,163,74,.4);height:38px;margin-top:6px;"></div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">06</div>
+</div>
+
+<!-- ════════ SLIDE 7 — FILTRO DR RAFAEL ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Filtro Dr Rafael">
+  <div class="eyebrow" style="color:var(--roxo);">🎯 Momento 2 — O filtro do Dr. Rafael · 5 minutos</div>
+  <h2 style="margin-bottom:32px;">O personagem que filtra cada post antes de você publicar</h2>
+
+  <div style="display:flex;gap:24px;align-items:flex-start;margin-bottom:28px;padding:28px 32px;background:var(--fundo);border-radius:16px;">
+    <div style="width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--azul-m),var(--roxo));display:flex;align-items:center;justify-content:center;font-size:36px;flex-shrink:0;">🦷</div>
+    <div>
+      <div style="font-size:13px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--roxo);margin-bottom:6px;">O filtro de cada post</div>
+      <div style="font-size:24px;font-weight:700;color:var(--azul);margin-bottom:10px;">Dr. Rafael — Implantodontista, 42 anos</div>
+      <div style="font-size:18px;color:var(--texto);line-height:1.6;">Abriu consultório há 6 meses na sua cidade. Agenda cheia, sem tempo para ligar para labs. Está avaliando fornecedores pelo Instagram durante o almoço. Exigente, técnico, não cai em perfil bonito sem substância.</div>
+    </div>
+  </div>
+
+  <div style="background:var(--roxo-c);border-radius:14px;padding:28px 32px;margin-bottom:28px;">
+    <div style="font-size:16px;font-weight:700;color:var(--roxo);margin-bottom:10px;">A pergunta que você faz antes de qualquer post:</div>
+    <div style="font-family:'Fraunces',serif;font-size:28px;font-style:italic;color:var(--azul);line-height:1.4;">"O Dr. Rafael pararia de rolar o feed por causa desse post?"</div>
+  </div>
+
+  <div style="display:flex;gap:32px;flex:1;align-items:center;">
+    <div style="flex:1;">
+      <div style="font-size:17px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);margin-bottom:20px;">✅ O que faz ele parar</div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="font-size:20px;color:#14532d;padding:20px 24px;background:var(--verde-c);border-radius:10px;line-height:1.4;">Foto de peça com legenda técnica e prazo</div>
+        <div style="font-size:20px;color:#14532d;padding:20px 24px;background:var(--verde-c);border-radius:10px;line-height:1.4;">Comparativo de material com argumento clínico</div>
+        <div style="font-size:20px;color:#14532d;padding:20px 24px;background:var(--verde-c);border-radius:10px;line-height:1.4;">Case de implante com encaixe e estética</div>
+        <div style="font-size:20px;color:#14532d;padding:20px 24px;background:var(--verde-c);border-radius:10px;line-height:1.4;">Depoimento de colega implantodontista</div>
+      </div>
+    </div>
+    <div style="flex:1;">
+      <div style="font-size:17px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--vermelho);margin-bottom:20px;">❌ O que faz ele continuar rolando</div>
+      <div style="display:flex;flex-direction:column;gap:16px;">
+        <div style="font-size:20px;color:#7f1d1d;padding:20px 24px;background:var(--vermelho-c);border-radius:10px;line-height:1.4;">"Mais um trabalho entregue com amor 💙"</div>
+        <div style="font-size:20px;color:#7f1d1d;padding:20px 24px;background:var(--vermelho-c);border-radius:10px;line-height:1.4;">Foto escura, mal iluminada, sem legenda</div>
+        <div style="font-size:20px;color:#7f1d1d;padding:20px 24px;background:var(--vermelho-c);border-radius:10px;line-height:1.4;">Frase motivacional sobre "sonhar grande"</div>
+        <div style="font-size:20px;color:#7f1d1d;padding:20px 24px;background:var(--vermelho-c);border-radius:10px;line-height:1.4;">Bio vazia ou com só o nome do lab</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">07</div>
+</div>
+
+<!-- ════════ SLIDE 8 — TEMPLATES INTRO ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Templates intro">
+  <div class="eyebrow" style="color:var(--laranja);">📐 Momento 3 — Os 5 templates de post · 15 minutos</div>
+  <h1 style="margin-bottom:24px;">Estrutura completa de cada formato que funciona para lab</h1>
+  <p class="sub" style="max-width:1300px;margin-bottom:56px;">Cada template tem: o que fotografar, como estruturar a legenda, qual o gancho da primeira linha e qual o CTA. Copie, adapte, use.</p>
+
+  <div style="display:flex;flex-direction:column;gap:20px;">
+    <div style="display:flex;align-items:center;gap:24px;background:var(--fundo);border-radius:14px;padding:24px 28px;">
+      <div style="background:var(--ciano);color:var(--azul);border-radius:10px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px;flex-shrink:0;">1</div>
+      <div style="font-size:22px;font-weight:700;color:var(--azul);flex:1;">A Peça Técnica</div>
+      <div style="font-size:16px;color:var(--cinza-texto);">2x por semana</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:24px;background:var(--fundo);border-radius:14px;padding:24px 28px;">
+      <div style="background:var(--azul-m);color:#fff;border-radius:10px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px;flex-shrink:0;">2</div>
+      <div style="font-size:22px;font-weight:700;color:var(--azul);flex:1;">O Bastidor de Processo</div>
+      <div style="font-size:16px;color:var(--cinza-texto);">1x por semana</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:24px;background:var(--fundo);border-radius:14px;padding:24px 28px;">
+      <div style="background:var(--verde);color:#fff;border-radius:10px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px;flex-shrink:0;">3</div>
+      <div style="font-size:22px;font-weight:700;color:var(--azul);flex:1;">A Dica Técnica para o Dentista</div>
+      <div style="font-size:16px;color:var(--cinza-texto);">1x por semana</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:24px;background:var(--fundo);border-radius:14px;padding:24px 28px;">
+      <div style="background:var(--roxo);color:#fff;border-radius:10px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px;flex-shrink:0;">4</div>
+      <div style="font-size:22px;font-weight:700;color:var(--azul);flex:1;">O Depoimento de Dentista</div>
+      <div style="font-size:16px;color:var(--cinza-texto);">1x por quinzena</div>
+    </div>
+    <div style="display:flex;align-items:center;gap:24px;background:var(--fundo);border-radius:14px;padding:24px 28px;">
+      <div style="background:var(--laranja);color:#fff;border-radius:10px;width:60px;height:60px;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:24px;flex-shrink:0;">5</div>
+      <div style="font-size:22px;font-weight:700;color:var(--azul);flex:1;">O Case de Alta Complexidade</div>
+      <div style="font-size:16px;color:var(--cinza-texto);">1x por mês</div>
+    </div>
+  </div>
+  <div class="slide-num">08</div>
+</div>
+
+<!-- ════════ SLIDE 9 — TEMPLATE 1 DETALHADO ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Template 1 A Peça Técnica">
+  <div style="display:flex;align-items:center;gap:16px;margin-bottom:32px;">
+    <div class="pill" style="background:var(--ciano);color:var(--azul);">Template 1</div>
+    <h2>A Peça Técnica</h2>
+    <span style="font-size:16px;color:var(--cinza-texto);margin-left:auto;">Frequência: 2x por semana</span>
+  </div>
+
+  <div style="display:flex;gap:32px;flex:1;align-items:stretch;">
+    <div style="flex:1;background:var(--fundo);border-radius:16px;padding:48px 40px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:22px;">📸 A foto</div>
+      <p style="font-size:24px;color:var(--texto);line-height:1.7;">Peça finalizada sobre fundo branco ou cinza neutro, luz natural ou LED frio lateral. Close no detalhe de ajuste, translucidez ou acabamento.</p>
+      <p style="font-size:24px;color:var(--azul);font-weight:600;line-height:1.7;margin-top:20px;">Sem mão segurando — a peça sozinha.</p>
+    </div>
+    <div style="flex:1.3;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:22px;">✍ A legenda</div>
+      <div style="background:var(--fundo);border-radius:14px;padding:36px 40px;font-size:20px;color:var(--azul);font-family:monospace;line-height:2.1;">
+        <span style="color:var(--vermelho);font-weight:700;">[Gancho]</span> [Material] — [detalhe técnico].<br>
+        <span style="color:var(--cinza-texto);font-size:18px;">Ex: "Zircônia monolítica A2 — encaixe anterior classe III."</span><br><br>
+        <span style="color:var(--verde);font-weight:700;">[Corpo]</span> 1 frase com argumento clínico.<br>
+        <span style="color:var(--cinza-texto);font-size:18px;">Ex: "Translucidez 43% sem estratificação."</span><br><br>
+        <span style="color:var(--ciano);font-weight:700;">[Dados]</span> Prazo + cidade.<br>
+        <span style="color:var(--cinza-texto);font-size:18px;">Ex: "Entrega em 4 dias úteis · Maringá-PR"</span><br><br>
+        <span style="color:var(--roxo);font-weight:700;">[CTA]</span> "DM para parceria ou ☎ no link da bio."
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">09</div>
+</div>
+
+<!-- ════════ SLIDE 10 — TEMPLATES 2-3 (compacto) ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Templates 2 e 3">
+  <h2 style="margin-bottom:36px;">Templates 2 e 3 — Bastidor e Dica Técnica</h2>
+  <div style="display:flex;gap:32px;flex:1;">
+    <div style="flex:1;border:1px solid var(--borda);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;">
+      <div style="background:var(--azul-m);padding:24px 30px;display:flex;align-items:center;gap:16px;">
+        <div class="pill" style="background:var(--amarelo);color:var(--azul);font-size:15px;">Template 2</div>
+        <span style="font-size:23px;font-weight:700;color:#fff;">O Bastidor de Processo</span>
+      </div>
+      <div style="padding:40px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">📸 A foto</div>
+        <p style="font-size:20px;color:var(--texto);line-height:1.7;margin-bottom:32px;">Fresadora em operação, scanner de bancada, impressora 3D com peça saindo. Mostra processo — não produto.</p>
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">✍ A legenda</div>
+        <div style="background:var(--fundo);border-radius:10px;padding:24px;font-size:18px;color:var(--azul);font-family:monospace;line-height:2;">
+          <span style="color:var(--vermelho);font-weight:700;">[Gancho]</span> Dado técnico surpreendente<br>
+          <span style="color:var(--verde);font-weight:700;">[Corpo]</span> O que essa etapa garante<br>
+          <span style="color:var(--roxo);font-weight:700;">[CTA]</span> "Quer conhecer nosso fluxo?"
+        </div>
+      </div>
+    </div>
+    <div style="flex:1;border:1px solid var(--borda);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;">
+      <div style="background:#1a3a1a;padding:24px 30px;display:flex;align-items:center;gap:16px;">
+        <div class="pill" style="background:var(--verde);color:#fff;font-size:15px;">Template 3</div>
+        <span style="font-size:23px;font-weight:700;color:#fff;">A Dica Técnica</span>
+      </div>
+      <div style="padding:40px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">📸 A foto / arte</div>
+        <p style="font-size:20px;color:var(--texto);line-height:1.7;margin-bottom:32px;">Carrossel com fundo sólido e texto simples. Slide 1: pergunta. Slides 2-3: resposta. Slide 4: CTA.</p>
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">✍ A legenda</div>
+        <div style="background:var(--fundo);border-radius:10px;padding:24px;font-size:18px;color:var(--azul);font-family:monospace;line-height:2;">
+          <span style="color:var(--vermelho);font-weight:700;">[Gancho]</span> Pergunta que ele já teve<br>
+          <span style="color:var(--verde);font-weight:700;">[Corpo]</span> Resposta em 3 linhas<br>
+          <span style="color:var(--roxo);font-weight:700;">[CTA]</span> "Salva esse post"
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">10</div>
+</div>
+
+<!-- ════════ SLIDE 11 — TEMPLATES 4-5 (compacto) ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Templates 4 e 5">
+  <h2 style="margin-bottom:36px;">Templates 4 e 5 — Depoimento e Case Complexo</h2>
+  <div style="display:flex;gap:32px;flex:1;">
+    <div style="flex:1;border:1px solid var(--borda);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;">
+      <div style="background:#3b1f6b;padding:24px 30px;display:flex;align-items:center;gap:16px;">
+        <div class="pill" style="background:var(--roxo);color:#fff;font-size:15px;">Template 4</div>
+        <span style="font-size:23px;font-weight:700;color:#fff;">O Depoimento de Dentista</span>
+      </div>
+      <div style="padding:40px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">📸 A foto / vídeo</div>
+        <p style="font-size:20px;color:var(--texto);line-height:1.7;margin-bottom:32px;">Vídeo de 20-40s do dentista falando, gravado no consultório. Ou print de conversa com elogio, fundo escuro.</p>
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">✍ A legenda</div>
+        <div style="background:var(--fundo);border-radius:10px;padding:24px;font-size:18px;color:var(--azul);font-family:monospace;line-height:2;">
+          <span style="color:var(--vermelho);font-weight:700;">[Gancho]</span> Nome + especialidade<br>
+          <span style="color:var(--verde);font-weight:700;">[Corpo]</span> Frase entre aspas<br>
+          <span style="color:var(--roxo);font-weight:700;">[CTA]</span> "Quer ser o próximo?"
+        </div>
+      </div>
+    </div>
+    <div style="flex:1;border:1px solid var(--borda);border-radius:18px;overflow:hidden;display:flex;flex-direction:column;">
+      <div style="background:#1a1a2e;padding:24px 30px;display:flex;align-items:center;gap:16px;">
+        <div class="pill" style="background:var(--laranja);color:#fff;font-size:15px;">Template 5</div>
+        <span style="font-size:23px;font-weight:700;color:#fff;">O Case de Alta Complexidade</span>
+      </div>
+      <div style="padding:40px;flex:1;display:flex;flex-direction:column;justify-content:center;">
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">📸 A foto</div>
+        <p style="font-size:20px;color:var(--texto);line-height:1.7;margin-bottom:32px;">Carrossel com 4-6 fotos: caso recebido, etapas, peça finalizada. Cada slide conta uma parte da história.</p>
+        <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--texto);margin-bottom:14px;">✍ A legenda</div>
+        <div style="background:var(--fundo);border-radius:10px;padding:24px;font-size:18px;color:var(--azul);font-family:monospace;line-height:2;">
+          <span style="color:var(--vermelho);font-weight:700;">[Gancho]</span> O desafio técnico<br>
+          <span style="color:var(--verde);font-weight:700;">[Corpo]</span> Como foi resolvido<br>
+          <span style="color:var(--roxo);font-weight:700;">[CTA]</span> "DM para casos complexos"
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">11</div>
+</div>
+
+<!-- ════════ SLIDE 12 — DESCONSTRUÇÃO ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Desconstrução">
+  <div class="eyebrow" style="color:var(--vermelho);">🔬 Momento 4 — Desconstrução ao vivo · 10 minutos</div>
+  <h1 style="margin-bottom:40px;">1 post ruim — analisado em conjunto pela turma</h1>
+
+  <div style="display:flex;flex-direction:column;gap:28px;">
+    <div style="background:var(--verde-c);border-radius:16px;padding:40px 44px;border-left:6px solid var(--verde);">
+      <div style="font-size:18px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);margin-bottom:20px;">✅ O que analisar num post que funciona</div>
+      <div style="font-size:24px;color:#14532d;line-height:2;">→ A primeira linha da legenda — faz você querer ler o resto?<br>→ A foto — dá para entender a peça e a qualidade em 2 segundos?<br>→ O CTA — fica claro o que o dentista deve fazer depois?</div>
+    </div>
+    <div style="background:var(--vermelho-c);border-radius:16px;padding:40px 44px;border-left:6px solid var(--vermelho);">
+      <div style="font-size:18px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--vermelho);margin-bottom:20px;">❌ Os 4 erros mais comuns</div>
+      <div style="font-size:24px;color:#7f1d1d;line-height:2;"><strong>1.</strong> Legenda emocional sem informação técnica<br><strong>2.</strong> Foto escura, sem fundo limpo, peça irreconhecível<br><strong>3.</strong> Sem CTA — dentista sem saber o que fazer<br><strong>4.</strong> Post de data comemorativa sem conexão com o lab</div>
+    </div>
+  </div>
+  <div class="slide-num">12</div>
+</div>
+
+<!-- ════════ SLIDE 13 — CALENDÁRIO INTRO ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Calendário 30 dias intro">
+  <div class="eyebrow" style="color:var(--ciano);">📅 Momento 5 — Calendário de 30 dias · 10 minutos</div>
+  <h1 style="margin-bottom:24px;">12 posts planejados — você não sai sem preencher</h1>
+  <p class="sub" style="max-width:1300px;margin-bottom:48px;">Frequência ideal: <strong>3 posts por semana</strong> — segunda, quarta e sexta. Cada semana segue o mesmo ciclo de templates para garantir variedade sem depender de criatividade diária.</p>
+
+  <div style="display:flex;gap:20px;margin-bottom:40px;">
+    <div style="flex:1;background:var(--fundo);border-radius:14px;padding:28px;text-align:center;">
+      <div style="font-family:'Fraunces',serif;font-size:40px;font-weight:900;color:var(--azul);">4</div>
+      <div style="font-size:16px;color:var(--texto);margin-top:8px;">semanas planejadas</div>
+    </div>
+    <div style="flex:1;background:var(--fundo);border-radius:14px;padding:28px;text-align:center;">
+      <div style="font-family:'Fraunces',serif;font-size:40px;font-weight:900;color:var(--azul);">3</div>
+      <div style="font-size:16px;color:var(--texto);margin-top:8px;">posts por semana</div>
+    </div>
+    <div style="flex:1;background:var(--fundo);border-radius:14px;padding:28px;text-align:center;">
+      <div style="font-family:'Fraunces',serif;font-size:40px;font-weight:900;color:var(--azul);">5</div>
+      <div style="font-size:16px;color:var(--texto);margin-top:8px;">templates disponíveis</div>
+    </div>
+    <div style="flex:1;background:var(--fundo);border-radius:14px;padding:28px;text-align:center;">
+      <div style="font-family:'Fraunces',serif;font-size:40px;font-weight:900;color:var(--azul);">12</div>
+      <div style="font-size:16px;color:var(--texto);margin-top:8px;">posts no total</div>
+    </div>
+  </div>
+
+  <div style="background:var(--ciano-c);border-radius:16px;padding:36px 40px;">
+    <p style="font-size:22px;color:var(--azul-m);line-height:1.6;"><strong>Instrução:</strong> nos próximos slides, preencha os campos "qual peça / qual etapa / qual dica / qual dentista". Você não precisa criar o conteúdo agora — só decidir o tema. O planejamento é o que evita o bloqueio na segunda-feira.</p>
+  </div>
+  <div class="slide-num">13</div>
+</div>
+
+<!-- ════════ SLIDE 14 — CALENDÁRIO SEMANAS 1-2 ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Calendário Semanas 1 e 2">
+  <h2 style="margin-bottom:40px;">Calendário editorial — Semanas 1 e 2</h2>
+  <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:8px;">
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">SEMANA</div>
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">SEGUNDA</div>
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">QUARTA</div>
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">SEXTA</div>
+
+    <div style="background:var(--fundo);padding:22px;font-size:22px;font-weight:700;color:var(--azul);text-align:center;border:1px solid var(--borda);display:flex;align-items:center;justify-content:center;">Sem 1</div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--azul);margin-bottom:18px;">T1 · Peça Técnica</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--azul-m);margin-bottom:18px;">T2 · Bastidor</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--verde);margin-bottom:18px;">T3 · Dica Técnica</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+
+    <div style="background:var(--fundo);padding:22px;font-size:22px;font-weight:700;color:var(--azul);text-align:center;border:1px solid var(--borda);display:flex;align-items:center;justify-content:center;">Sem 2</div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--azul);margin-bottom:18px;">T1 · Peça Técnica</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--roxo);margin-bottom:18px;">T4 · Depoimento</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--azul);margin-bottom:18px;">T1 · Peça Técnica</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+  </div>
+  <div style="margin-top:32px;background:var(--fundo);border-radius:12px;padding:20px 28px;">
+    <p style="font-size:16px;color:var(--cinza-texto);">💡 Preencha apenas o tema da peça, etapa ou dica — o roteiro completo de cada template está nos slides anteriores.</p>
+  </div>
+  <div class="slide-num">14</div>
+</div>
+
+<!-- ════════ SLIDE 15 — CALENDÁRIO SEMANAS 3-4 ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — Calendário Semanas 3 e 4">
+  <h2 style="margin-bottom:40px;">Calendário editorial — Semanas 3 e 4</h2>
+  <div style="display:grid;grid-template-columns:160px 1fr 1fr 1fr;gap:8px;">
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">SEMANA</div>
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">SEGUNDA</div>
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">QUARTA</div>
+    <div style="background:var(--azul);color:rgba(255,255,255,.6);font-size:17px;font-weight:700;padding:22px;text-align:center;letter-spacing:1px;">SEXTA</div>
+
+    <div style="background:var(--fundo);padding:22px;font-size:22px;font-weight:700;color:var(--azul);text-align:center;border:1px solid var(--borda);display:flex;align-items:center;justify-content:center;">Sem 3</div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--azul);margin-bottom:18px;">T1 · Peça Técnica</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--azul-m);margin-bottom:18px;">T2 · Bastidor</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--verde);margin-bottom:18px;">T3 · Dica Técnica</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+
+    <div style="background:var(--fundo);padding:22px;font-size:22px;font-weight:700;color:var(--azul);text-align:center;border:1px solid var(--borda);display:flex;align-items:center;justify-content:center;">Sem 4</div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--laranja);margin-bottom:18px;">T5 · Case Complexo</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--roxo);margin-bottom:18px;">T4 · Depoimento</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+    <div style="background:#fff;padding:28px;border:1px solid var(--borda);">
+      <div style="font-size:17px;font-weight:700;color:var(--azul);margin-bottom:18px;">T1 · Peça Técnica</div>
+      <div class="fill-line" style="height:44px;"></div>
+    </div>
+  </div>
+  <div style="margin-top:32px;background:var(--verde-c);border-radius:12px;padding:24px 28px;">
+    <p style="font-size:18px;color:#14532d;"><strong>✓ Calendário completo!</strong> Você já tem os 12 posts do mês planejados. Agora é só executar — 3x por semana, sem precisar decidir o tema na hora.</p>
+  </div>
+  <div class="slide-num">15</div>
+</div>
+
+<!-- ════════ SLIDE 16 — JOÃO + REGRA DE OURO (ENCERRAMENTO) ════════ -->
+<div class="slide" data-document-role="page" data-label="Instagram — João e regra de ouro">
+  <div style="background:var(--fundo);border-radius:20px;padding:48px 52px;margin-bottom:40px;">
+    <div style="display:flex;align-items:center;gap:20px;margin-bottom:28px;">
+      <div style="width:68px;height:68px;border-radius:50%;background:var(--azul);display:flex;align-items:center;justify-content:center;font-size:32px;">🧑‍🔬</div>
+      <div style="font-size:22px;font-weight:700;color:var(--azul);">A história do João neste canal</div>
+    </div>
+    <div style="background:var(--vermelho-c);border-radius:12px;padding:28px 32px;margin-bottom:22px;">
+      <p style="font-size:22px;color:#7f1d1d;line-height:1.7;"><strong>❌ A tentativa que falhou:</strong> João criou o perfil, postou 3 fotos com legenda "Mais um trabalho entregue com qualidade e dedicação 💙". Esperou. Nada. Concluiu que "Instagram não funciona para lab".</p>
+    </div>
+    <div style="background:var(--verde-c);border-radius:12px;padding:28px 32px;">
+      <p style="font-size:22px;color:#14532d;line-height:1.7;"><strong>✓ O que mudou:</strong> João aplicou o Template 1. Escreveu: <em>"Zircônia monolítica A2 — encaixe anterior. Prazo: 4 dias úteis. DM para parceria."</em> Em 3 semanas, um implantodontista mandou DM. Hoje é o maior cliente do João.</p>
+    </div>
+  </div>
+
+  <div style="background:var(--azul);border-radius:20px;padding:44px 52px;">
+    <div style="font-size:17px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ciano);margin-bottom:18px;">💡 Regra de ouro</div>
+    <p style="font-size:28px;color:#fff;line-height:1.6;">Antes de postar, faça a pergunta do Dr. Rafael. Se a resposta for não — reescreva a legenda, não a foto. <strong>O conteúdo que para o Dr. Rafael é a legenda técnica. A foto só confirma.</strong></p>
+  </div>
+  <div class="slide-num">16</div>
+</div>
+
+</body>
+</html>
