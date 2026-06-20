@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Slides — Canal Google Meu Negócio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0a2540; --azul-m:#13345c; --ciano:#00b4cc; --ciano-c:#e0f7fa;
+    --fundo:#f7f8fa; --borda:#e2e6ea; --texto:#3a4452; --cinza-texto:#8a93a0;
+    --verde:#16a34a; --verde-c:#dcfce7; --vermelho:#dc2626; --vermelho-c:#fee2e2;
+    --amarelo:#f5c842; --roxo:#7c3aed; --roxo-c:#ede9fe; --laranja:#ea580c;
+    --google-blue:#1a73e8;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:#444;}
+  .slide{
+    width:1920px;height:1080px;
+    background:#fff;
+    position:relative;
+    overflow:hidden;
+    margin:0 auto 24px;
+    display:flex;flex-direction:column;
+    justify-content:center;
+    padding:90px 110px;
+  }
+  .slide-num{position:absolute;bottom:32px;right:48px;font-size:14px;color:var(--cinza-texto);font-weight:600;}
+  .eyebrow{font-size:17px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--google-blue);margin-bottom:18px;}
+  h1{font-family:'Fraunces',serif;font-size:56px;font-weight:700;color:var(--azul);line-height:1.15;margin-bottom:20px;}
+  h2{font-family:'Fraunces',serif;font-size:38px;font-weight:600;color:var(--azul);line-height:1.2;}
+  .sub{font-size:22px;color:var(--texto);line-height:1.5;}
+  .card{background:var(--fundo);border-radius:18px;padding:32px 36px;}
+  .pill{display:inline-block;padding:6px 16px;border-radius:20px;font-size:14px;font-weight:700;}
+  .fill-line{border-bottom:2px dashed var(--borda);height:36px;margin-top:8px;}
+  /* dark slide variant - google gold/dark */
+  .slide.dark{background:linear-gradient(135deg,#1a1500,#3d2e00);}
+  .slide.dark h1, .slide.dark h2{color:#fff;}
+  .slide.dark .sub{color:rgba(255,255,255,.65);}
+  .slide.dark .eyebrow{color:var(--amarelo);}
+</style>
+</head>
+<body>
+
+<!-- ════════ SLIDE 1 — ABERTURA DO CANAL ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — Abertura">
+  <div style="display:flex;align-items:center;gap:28px;margin-bottom:48px;">
+    <div style="width:96px;height:96px;border-radius:24px;background:linear-gradient(135deg,#1a73e8,#4285f4);display:flex;align-items:center;justify-content:center;font-size:48px;flex-shrink:0;">📍</div>
+    <div>
+      <div class="eyebrow">Canal 03 — Aula Imersiva</div>
+      <h1 style="margin-bottom:6px;">Google Meu Negócio</h1>
+      <div class="sub">Ser encontrado quando o dentista pesquisa laboratório na região</div>
+    </div>
+  </div>
+
+  <div class="card" style="padding:48px 52px;">
+    <div style="font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--texto);margin-bottom:32px;">⏱ Roteiro desta aula — 65 minutos</div>
+    <div style="display:flex;flex-direction:column;gap:16px;">
+      <div style="display:grid;grid-template-columns:220px 1fr 110px;gap:22px;align-items:center;padding:24px 28px;background:#fef7e8;border-radius:16px;">
+        <span style="font-weight:700;color:#b45309;font-size:21px;">Abertura</span><span style="color:var(--texto);font-size:21px;">Dinâmica "Você existe no Google?" — busca em 2 camadas</span><span style="color:var(--cinza-texto);font-size:17px;">15 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:220px 1fr 110px;gap:22px;align-items:center;padding:24px 28px;background:#fff;border:1px solid var(--borda);border-radius:16px;">
+        <span style="font-weight:700;color:var(--google-blue);font-size:21px;">Técnica</span><span style="color:var(--texto);font-size:21px;">Anatomia da ficha perfeita — categoria, descrição, fotos, horário</span><span style="color:var(--cinza-texto);font-size:17px;">12 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:220px 1fr 110px;gap:22px;align-items:center;padding:24px 28px;background:#fff;border:1px solid var(--borda);border-radius:16px;">
+        <span style="font-weight:700;color:var(--google-blue);font-size:21px;">Estratégia</span><span style="color:var(--texto);font-size:21px;">Avaliações de dentistas parceiros — o fator que mais pesa</span><span style="color:var(--cinza-texto);font-size:17px;">12 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:220px 1fr 110px;gap:22px;align-items:center;padding:24px 28px;background:#fff;border:1px solid var(--borda);border-radius:16px;">
+        <span style="font-weight:700;color:var(--google-blue);font-size:21px;">Recurso</span><span style="color:var(--texto);font-size:21px;">Google Posts — o recurso esquecido pelos laboratórios</span><span style="color:var(--cinza-texto);font-size:17px;">10 min</span>
+      </div>
+      <div style="display:grid;grid-template-columns:220px 1fr 110px;gap:22px;align-items:center;padding:24px 28px;background:#fff;border:1px solid var(--borda);border-radius:16px;">
+        <span style="font-weight:700;color:var(--google-blue);font-size:21px;">Entrega</span><span style="color:var(--texto);font-size:21px;">Checklist de ficha + compromisso de ação</span><span style="color:var(--cinza-texto);font-size:17px;">8 min</span>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">01</div>
+</div>
+
+<!-- ════════ SLIDE 2 — POR QUÊ + DADOS ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — Por que este canal">
+  <div class="eyebrow">⚡ Por que este canal?</div>
+  <h2 style="margin-bottom:28px;">A ferramenta que decide quem aparece na busca local</h2>
+  <div style="background:#fff;border-left:6px solid var(--google-blue);border-radius:14px;padding:36px 40px;margin-bottom:40px;box-shadow:0 2px 12px rgba(0,0,0,.04);">
+    <p style="font-size:23px;color:var(--texto);line-height:1.6;">O dentista que pesquisou "laboratório de prótese em [cidade]" e foi para o concorrente usou o Google. <strong style="color:var(--azul);">Google Meu Negócio é gratuito, leva 1 hora para configurar</strong> e é completamente subutilizado pelos laboratórios brasileiros. Aqui não existe algoritmo de engajamento — existe completude de informação e prova social.</p>
+  </div>
+
+  <div style="display:flex;gap:24px;flex:1;">
+    <div style="flex:1;background:#e8f0fe;border-radius:16px;padding:44px 36px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--google-blue);margin-bottom:14px;">50%</div>
+      <div style="font-size:22px;color:var(--texto);font-weight:600;margin-bottom:22px;line-height:1.3;">das buscas no Google têm intenção local</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">"Laboratório prótese [cidade]" é exatamente esse tipo de busca.</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:22px;">Harmo / Reclame Aqui, 2025</div>
+    </div>
+    <div style="flex:1;background:#e8f0fe;border-radius:16px;padding:44px 36px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--google-blue);margin-bottom:14px;">88%</div>
+      <div style="font-size:22px;color:var(--texto);font-weight:600;margin-bottom:22px;line-height:1.3;">confiam em avaliações tanto quanto indicação pessoal</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">Para quem nunca ouviu falar do seu lab, suas avaliações valem o mesmo que um colega recomendando.</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:22px;">Taggbox, 2025</div>
+    </div>
+    <div style="flex:1;background:#e8f0fe;border-radius:16px;padding:44px 36px;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--google-blue);margin-bottom:14px;">87%</div>
+      <div style="font-size:22px;color:var(--texto);font-weight:600;margin-bottom:22px;line-height:1.3;">descartam negócios com nota abaixo de 4 estrelas</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">3,2 estrelas vs. 4,8 do concorrente — a decisão está tomada antes do primeiro contato.</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:22px;">Harmo / Reclame Aqui, 2025</div>
+    </div>
+  </div>
+
+  <div style="margin-top:32px;background:var(--azul);border-radius:14px;padding:24px 32px;">
+    <span style="font-size:14px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--ciano);">🎯 Objetivo</span>
+    <p style="font-size:20px;color:#fff;margin-top:6px;">Aparecer nos primeiros resultados quando o dentista busca "laboratório prótese + cidade" e gerar confiança antes do primeiro contato.</p>
+  </div>
+  <div class="slide-num">02</div>
+</div>
+
+<!-- ════════ SLIDE 3 — DINÂMICA CABEÇALHO ════════ -->
+<div class="slide dark" data-document-role="page" data-label="GMN — Dinâmica intro">
+  <div style="display:flex;flex-direction:column;justify-content:center;height:100%;max-width:1400px;">
+    <div class="eyebrow">🔍 Abertura — Dinâmica "Você existe no Google?" · 15 minutos</div>
+    <h1 style="margin-bottom:24px;">Busca em 2 camadas — o genérico e o seu nome</h1>
+    <p class="sub" style="font-size:26px;max-width:1100px;">Laboratório é B2B — o dentista raramente pesquisa "laboratório de prótese" do zero. Por isso a dinâmica precisa de 2 camadas: o que existe na busca genérica, e se sua ficha própria está completa.</p>
+    <div style="display:flex;gap:20px;margin-top:56px;">
+      <div style="background:rgba(255,255,255,.08);border-radius:16px;padding:28px 32px;flex:1;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--amarelo);color:#1a1500;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;margin-bottom:16px;">A</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">5 min · busca genérica</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;">"Laboratório de prótese [cidade]"</div>
+      </div>
+      <div style="background:rgba(255,255,255,.08);border-radius:16px;padding:28px 32px;flex:1;">
+        <div style="width:48px;height:48px;border-radius:50%;background:var(--amarelo);color:#1a1500;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;margin-bottom:16px;">B</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">5 min · busca pelo nome</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;">Pesquise o nome do seu lab</div>
+      </div>
+      <div style="background:rgba(255,255,255,.08);border-radius:16px;padding:28px 32px;flex:1;">
+        <div style="width:48px;height:48px;border-radius:50%;background:#fff;color:#1a1500;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:22px;margin-bottom:16px;">C</div>
+        <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;">5 min · discussão guiada</div>
+        <div style="font-size:20px;font-weight:700;color:#fff;">O que os labs bem-posicionados têm em comum?</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">03</div>
+</div>
+
+<!-- ════════ SLIDE 4 — PARTE A ════════ -->
+<div class="slide dark" data-document-role="page" data-label="GMN — Dinâmica Parte A">
+  <div style="display:flex;align-items:center;gap:18px;margin-bottom:8px;">
+    <div style="background:var(--amarelo);color:#1a1500;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;">A</div>
+    <div>
+      <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;">5 minutos · busca genérica</div>
+      <div style="font-size:26px;font-weight:700;color:#fff;">"Laboratório de prótese dentária [sua cidade]"</div>
+    </div>
+  </div>
+  <p class="sub" style="margin:24px 0 36px;max-width:1300px;">Todo mundo pesquisa ao mesmo tempo no celular. Observe o que aparece — quem está no mapa, quem está na lista, em que ordem.</p>
+
+  <div style="display:flex;flex-direction:column;gap:22px;">
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:32px 36px;font-size:24px;color:rgba(255,255,255,.9);display:flex;gap:24px;align-items:flex-start;line-height:1.5;">
+      <span style="color:var(--amarelo);font-weight:700;flex-shrink:0;">→</span><span>Quantos laboratórios apareceram? O seu estava entre eles?</span>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:32px 36px;font-size:24px;color:rgba(255,255,255,.9);display:flex;gap:24px;align-items:flex-start;line-height:1.5;">
+      <span style="color:var(--amarelo);font-weight:700;flex-shrink:0;">→</span><span>O primeiro da lista tem quantas avaliações? Qual nota?</span>
+    </div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">04</div>
+</div>
+
+<!-- ════════ SLIDE 5 — PARTE B ════════ -->
+<div class="slide dark" data-document-role="page" data-label="GMN — Dinâmica Parte B">
+  <div style="display:flex;align-items:center;gap:18px;margin-bottom:8px;">
+    <div style="background:var(--amarelo);color:#1a1500;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;">B</div>
+    <div>
+      <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;">5 minutos · busca pelo próprio nome</div>
+      <div style="font-size:26px;font-weight:700;color:#fff;">Pesquise o nome do seu próprio laboratório</div>
+    </div>
+  </div>
+  <p class="sub" style="margin:24px 0 36px;max-width:1300px;">Mesmo que você não apareça na busca genérica, você precisa aparecer quando alguém busca seu nome direto — é a base mínima de existir no Google.</p>
+
+  <div style="display:flex;flex-direction:column;gap:22px;">
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:32px 36px;font-size:24px;color:rgba(255,255,255,.9);display:flex;gap:24px;align-items:flex-start;line-height:1.5;">
+      <span style="color:var(--amarelo);font-weight:700;flex-shrink:0;">→</span><span>Apareceu uma ficha? Foi você quem criou, ou foi gerada automaticamente sem dono?</span>
+    </div>
+    <div style="background:rgba(255,255,255,.07);border-radius:14px;padding:32px 36px;font-size:24px;color:rgba(255,255,255,.9);display:flex;gap:24px;align-items:flex-start;line-height:1.5;">
+      <span style="color:var(--amarelo);font-weight:700;flex-shrink:0;">→</span><span>Endereço, telefone e horário estão certos? Tem foto? Tem avaliação?</span>
+    </div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">05</div>
+</div>
+
+<!-- ════════ SLIDE 6 — PARTE C ════════ -->
+<div class="slide dark" data-document-role="page" data-label="GMN — Dinâmica Parte C">
+  <div style="display:flex;align-items:center;gap:18px;margin-bottom:8px;">
+    <div style="background:#fff;color:#1a1500;width:44px;height:44px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:20px;font-weight:800;">C</div>
+    <div>
+      <div style="font-size:14px;color:rgba(255,255,255,.4);text-transform:uppercase;letter-spacing:1px;">5 minutos · discussão guiada</div>
+      <div style="font-size:26px;font-weight:700;color:#fff;">O que os labs que apareciam bem tinham em comum?</div>
+    </div>
+  </div>
+  <p class="sub" style="margin:20px 0 28px;max-width:1400px;">Professor conduz a turma a verbalizar os padrões observados — antes de qualquer teoria.</p>
+
+  <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:32px;">
+    <div style="background:rgba(245,200,66,.1);border-radius:14px;padding:24px 28px;font-size:20px;color:rgba(255,255,255,.88);"><strong style="color:var(--amarelo);">1.</strong> O que vocês notaram nos labs que apareciam bem no topo?</div>
+    <div style="background:rgba(245,200,66,.1);border-radius:14px;padding:24px 28px;font-size:20px;color:rgba(255,255,255,.88);"><strong style="color:var(--amarelo);">2.</strong> Quais dados eles tinham preenchidos que talvez o seu não tenha?</div>
+    <div style="background:rgba(245,200,66,.1);border-radius:14px;padding:24px 28px;font-size:20px;color:rgba(255,255,255,.88);"><strong style="color:var(--amarelo);">3.</strong> O que você precisa fazer essa semana para ficar mais próximo de ser encontrado?</div>
+  </div>
+
+  <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:32px 36px;">
+    <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--amarelo);margin-bottom:18px;">✍ O que eu descobri sobre o meu laboratório no Google</div>
+    <div style="border-bottom:2px dashed rgba(255,255,255,.3);height:54px;"></div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">06</div>
+</div>
+
+<!-- ════════ SLIDE 7 — ANATOMIA DA FICHA PERFEITA ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — Anatomia da Ficha Perfeita">
+  <div class="eyebrow">📋 Anatomia da ficha perfeita para laboratório</div>
+  <h1 style="margin-bottom:36px;">Os 5 elementos que diferenciam quem aparece de quem não</h1>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px;">
+    <div style="border:1px solid var(--borda);border-radius:14px;padding:28px 30px;">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--google-blue);margin-bottom:12px;">🏷️ Categoria correta</div>
+      <p style="font-size:18px;color:var(--texto);line-height:1.5;">Escolha <strong style="color:var(--azul);">"Laboratório dentário"</strong> — não "Clínica odontológica". Categoria errada faz o Google te mostrar para o público errado.</p>
+    </div>
+    <div style="border:1px solid var(--borda);border-radius:14px;padding:28px 30px;">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--google-blue);margin-bottom:12px;">📝 Descrição com palavras-chave</div>
+      <p style="font-size:18px;color:var(--texto);line-height:1.5;">"Laboratório de prótese em [cidade] — zircônia, implante, fluxo digital, 5 dias úteis." Específico, buscável.</p>
+    </div>
+    <div style="border:1px solid var(--borda);border-radius:14px;padding:28px 30px;">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--google-blue);margin-bottom:12px;">⏰ Horário de atendimento B2B</div>
+      <p style="font-size:18px;color:var(--texto);line-height:1.5;">Configure horário comercial real — não "24h" genérico. Dentista confia mais na seriedade da operação.</p>
+    </div>
+    <div style="border:1px solid var(--borda);border-radius:14px;padding:28px 30px;">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--google-blue);margin-bottom:12px;">📸 Fotos de peças e bastidor</div>
+      <p style="font-size:18px;color:var(--texto);line-height:1.5;">Fresadora, bancada, peças finalizadas. <strong style="color:var(--vermelho);">Nunca foto de sorriso de paciente.</strong></p>
+    </div>
+  </div>
+  <div style="background:var(--ciano-c);border-radius:14px;padding:24px 28px;">
+    <div style="font-size:16px;font-weight:700;color:var(--azul-m);margin-bottom:6px;">5º elemento — o mais negligenciado</div>
+    <p style="font-size:18px;color:var(--azul-m);">Avaliações de dentistas parceiros. Vale mais que todos os outros 4 juntos no ranqueamento — é o próximo bloco.</p>
+  </div>
+  <div class="slide-num">07</div>
+</div>
+
+<!-- ════════ SLIDE 8 — ESTRATÉGIA DE AVALIAÇÕES (MOMENTO CERTO/ERRADO + SCRIPT) ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — Estratégia de Avaliações Script">
+  <div class="eyebrow" style="color:var(--laranja);">⭐ A estratégia de avaliação de dentistas parceiros</div>
+  <h2 style="margin-bottom:8px;">O fator que mais pesa no ranqueamento</h2>
+  <p style="font-size:19px;color:var(--texto);margin-bottom:28px;max-width:1500px;line-height:1.5;">A única fonte de prova social real é o <strong style="color:var(--azul);">dentista parceiro</strong>. Isso exige pedir — de forma natural, no momento certo.</p>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-bottom:24px;">
+    <div style="background:var(--verde-c);border-radius:14px;padding:28px 30px;">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);margin-bottom:14px;">✅ O momento certo</div>
+      <p style="font-size:18px;color:#14532d;line-height:1.6;">Logo após a entrega de um caso bem-sucedido — quando o dentista demonstrou satisfação. O pico emocional positivo é a melhor janela.</p>
+    </div>
+    <div style="background:var(--vermelho-c);border-radius:14px;padding:28px 30px;">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--vermelho);margin-bottom:14px;">❌ O momento errado</div>
+      <p style="font-size:18px;color:#7f1d1d;line-height:1.6;">Pedir em massa para toda a base de uma vez, ou logo na primeira entrega sem confiança construída.</p>
+    </div>
+  </div>
+
+  <div style="background:var(--fundo);border-radius:14px;padding:28px 32px;border-left:5px solid var(--laranja);">
+    <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--laranja);margin-bottom:14px;">📤 Script — como pedir sem parecer forçado</div>
+    <div style="font-size:21px;color:var(--azul);line-height:1.6;font-style:italic;">"Dr. [Nome], fico feliz que o caso ficou bom assim! Se puder, deixa uma avaliação rápida no nosso Google — ajuda muito outros dentistas a conhecerem nosso trabalho. [link direto]"</div>
+  </div>
+  <div class="slide-num">08</div>
+</div>
+
+<!-- ════════ SLIDE 9 — ESTRATÉGIA DE AVALIAÇÕES (3 NÚMEROS) ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — Avaliações Números">
+  <div class="eyebrow" style="color:var(--laranja);">⭐ Por que avaliações pesam tanto</div>
+  <h1 style="margin-bottom:48px;">A matemática por trás da prova social</h1>
+
+  <div style="display:flex;gap:28px;flex:1;align-items:stretch;">
+    <div style="flex:1;background:var(--azul);border-radius:18px;padding:48px 36px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--ciano);margin-bottom:20px;">88%</div>
+      <div style="font-size:20px;color:rgba(255,255,255,.85);line-height:1.5;">confiam em avaliação Google tanto quanto indicação pessoal</div>
+    </div>
+    <div style="flex:1;background:var(--azul);border-radius:18px;padding:48px 36px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--ciano);margin-bottom:20px;">+20%</div>
+      <div style="font-size:20px;color:rgba(255,255,255,.85);line-height:1.5;">de receita estimada a cada estrela a mais na média</div>
+    </div>
+    <div style="flex:1;background:var(--azul);border-radius:18px;padding:48px 36px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-family:'Fraunces',serif;font-size:64px;font-weight:900;color:var(--ciano);margin-bottom:20px;">66</div>
+      <div style="font-size:20px;color:rgba(255,255,255,.85);line-height:1.5;">avaliações é a média de um perfil comercial completo</div>
+    </div>
+  </div>
+  <div style="margin-top:32px;background:var(--fundo);border-radius:14px;padding:24px 28px;">
+    <p style="font-size:18px;color:var(--texto);">Sempre com o link direto — quanto menor o esforço para avaliar, maior a taxa de resposta.</p>
+  </div>
+  <div class="slide-num">09</div>
+</div>
+
+<!-- ════════ SLIDE 10 — GOOGLE POSTS ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — Google Posts">
+  <div class="eyebrow" style="color:var(--roxo);">📢 Google Posts — o recurso esquecido</div>
+  <h2 style="margin-bottom:16px;">Aparece direto na sua ficha — sem site, sem seguidor</h2>
+  <p style="font-size:19px;color:var(--texto);margin-bottom:32px;max-width:1500px;line-height:1.5;">Praticamente nenhum laboratório usa. Os posts aparecem direto na busca e no mapa — visibilidade gratuita que a maioria deixa parada.</p>
+
+  <div style="display:flex;gap:24px;margin-bottom:24px;">
+    <div style="flex:1;border:1px solid var(--borda);border-radius:14px;padding:28px;">
+      <div style="font-size:17px;font-weight:700;color:var(--roxo);margin-bottom:14px;">🆕 Novo equipamento</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">"Incorporamos fresadora de 5 eixos — reduzindo prazo de zircônia para 3 dias úteis."</div>
+    </div>
+    <div style="flex:1;border:1px solid var(--borda);border-radius:14px;padding:28px;">
+      <div style="font-size:17px;font-weight:700;color:var(--roxo);margin-bottom:14px;">🦷 Novidade técnica</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">"Agora trabalhamos com dissilicato de lítio para próteses anteriores de alta estética."</div>
+    </div>
+    <div style="flex:1;border:1px solid var(--borda);border-radius:14px;padding:28px;">
+      <div style="font-size:17px;font-weight:700;color:var(--roxo);margin-bottom:14px;">🏆 Case de destaque</div>
+      <div style="font-size:17px;color:var(--texto);line-height:1.6;">"Reabilitação total em 6 implantes finalizada essa semana. Confira o resultado."</div>
+    </div>
+  </div>
+  <div style="background:var(--roxo-c);border-radius:14px;padding:24px 28px;">
+    <p style="font-size:18px;color:var(--roxo);"><strong>Frequência sugerida:</strong> 1 post a cada 2 semanas é suficiente para manter o perfil "ativo" aos olhos do Google.</p>
+  </div>
+  <div class="slide-num">10</div>
+</div>
+
+<!-- ════════ SLIDE 11 — PERGUNTAS E RESPOSTAS ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — Perguntas e Respostas">
+  <div class="eyebrow">❓ Perguntas e Respostas pré-preenchidas</div>
+  <h2 style="margin-bottom:16px;">Antecipe a dúvida antes mesmo do primeiro contato</h2>
+  <p style="font-size:19px;color:var(--texto);margin-bottom:32px;max-width:1500px;line-height:1.5;">A maioria ignora essa seção — uma oportunidade, não um problema. Quem usa essa "mini central de dúvidas" reduz o tempo de decisão do dentista.</p>
+
+  <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:24px;">
+    <div style="background:var(--fundo);border-radius:12px;padding:22px 26px;">
+      <div style="font-size:18px;font-weight:700;color:var(--azul);margin-bottom:8px;">P: Qual o prazo médio de entrega?</div>
+      <div style="font-size:18px;color:var(--texto);">R: 5 dias úteis para a maioria dos casos. Urgências sob consulta.</div>
+    </div>
+    <div style="background:var(--fundo);border-radius:12px;padding:22px 26px;">
+      <div style="font-size:18px;font-weight:700;color:var(--azul);margin-bottom:8px;">P: Vocês atendem fora da cidade?</div>
+      <div style="font-size:18px;color:var(--texto);">R: Sim, atendemos toda a região via transportadora e envio do caso pelo OdontoDocs.</div>
+    </div>
+    <div style="background:var(--fundo);border-radius:12px;padding:22px 26px;">
+      <div style="font-size:18px;font-weight:700;color:var(--azul);margin-bottom:8px;">P: Quais materiais vocês trabalham?</div>
+      <div style="font-size:18px;color:var(--texto);">R: Zircônia monolítica, dissilicato de lítio, PMMA e resinas para prótese total.</div>
+    </div>
+  </div>
+  <div style="background:var(--azul);border-radius:14px;padding:24px 28px;">
+    <p style="font-size:18px;color:rgba(255,255,255,.85);"><strong style="color:var(--ciano);">Ação prática:</strong> crie as 3 perguntas mais comuns que você recebe no WhatsApp todo mês e já deixe respondidas na ficha.</p>
+  </div>
+  <div class="slide-num">11</div>
+</div>
+
+<!-- ════════ SLIDE 12 — JOÃO + REGRA DE OURO + PONTE (ENCERRAMENTO) ════════ -->
+<div class="slide" data-document-role="page" data-label="GMN — João regra de ouro e ponte">
+  <div style="background:var(--fundo);border-radius:20px;padding:44px 48px;margin-bottom:28px;">
+    <div style="display:flex;align-items:center;gap:20px;margin-bottom:24px;">
+      <div style="width:64px;height:64px;border-radius:50%;background:var(--google-blue);display:flex;align-items:center;justify-content:center;font-size:30px;">🧑‍🔬</div>
+      <div style="font-size:21px;font-weight:700;color:var(--azul);">A história do João neste canal</div>
+    </div>
+    <div style="background:var(--vermelho-c);border-radius:12px;padding:24px 28px;margin-bottom:18px;">
+      <p style="font-size:19px;color:#7f1d1d;line-height:1.6;"><strong>❌ O que João descobriu:</strong> Pesquisou o próprio laboratório e encontrou um perfil criado pelo sobrinho anos atrás — endereço errado, telefone desatualizado, zero avaliações. Ficou com vergonha do que viu.</p>
+    </div>
+    <div style="background:var(--verde-c);border-radius:12px;padding:24px 28px;">
+      <p style="font-size:19px;color:#14532d;line-height:1.6;"><strong>✓ O que mudou:</strong> João dedicou 1 sábado, atualizou tudo, adicionou 18 fotos reais e pediu avaliação para 8 dentistas. Em 3 meses: 34 avaliações, nota 4,9. <strong>Hoje recebe em média 2 novos contatos por mês</strong> que encontraram o lab no Google.</p>
+    </div>
+  </div>
+
+  <div style="background:var(--azul);border-radius:18px;padding:36px 44px;margin-bottom:20px;">
+    <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ciano);margin-bottom:14px;">💡 Regra de ouro</div>
+    <p style="font-size:23px;color:#fff;line-height:1.6;">Meta de <strong>50+ avaliações com nota 4,8+.</strong> Quando o dentista elogiar uma peça, mande o link no mesmo momento. Peça entregue → elogio recebido → link de avaliação enviado.</p>
+  </div>
+
+  <div style="background:var(--google-blue);border-radius:14px;padding:22px 28px;text-align:center;">
+    <p style="font-size:19px;color:#fff;">📍 O Google Meu Negócio <strong>te encontra.</strong> Mas quando o dentista clicar para confirmar se você é sério — é o site que decide. <strong>É o próximo canal.</strong></p>
+  </div>
+  <div class="slide-num">12</div>
+</div>
+
+</body>
+</html>
