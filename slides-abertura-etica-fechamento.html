@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Slides — Abertura, Ética e Fechamento</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --azul:#0a2540; --azul-m:#13345c; --ciano:#00b4cc; --ciano-c:#e0f7fa;
+    --fundo:#f7f8fa; --borda:#e2e6ea; --texto:#3a4452; --cinza-texto:#8a93a0;
+    --verde:#16a34a; --verde-c:#dcfce7; --vermelho:#dc2626; --vermelho-c:#fee2e2;
+    --amarelo:#f5c842; --roxo:#7c3aed; --roxo-c:#ede9fe; --laranja:#ea580c;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:'Inter',sans-serif;background:#444;}
+  .slide{
+    width:1920px;height:1080px;
+    background:#fff;
+    position:relative;
+    overflow:hidden;
+    margin:0 auto 24px;
+    display:flex;flex-direction:column;
+    justify-content:center;
+    padding:90px 110px;
+  }
+  .slide-num{position:absolute;bottom:32px;right:48px;font-size:14px;color:var(--cinza-texto);font-weight:600;}
+  .eyebrow{font-size:17px;font-weight:700;letter-spacing:3px;text-transform:uppercase;color:var(--ciano);margin-bottom:18px;}
+  h1{font-family:'Fraunces',serif;font-size:56px;font-weight:700;color:var(--azul);line-height:1.15;margin-bottom:20px;}
+  h2{font-family:'Fraunces',serif;font-size:38px;font-weight:600;color:var(--azul);line-height:1.2;}
+  .sub{font-size:22px;color:var(--texto);line-height:1.5;}
+  .card{background:var(--fundo);border-radius:18px;padding:32px 36px;}
+  /* dark slide variant */
+  .slide.dark{background:linear-gradient(135deg,#0f172a,#1a2f4e);}
+  .slide.dark h1, .slide.dark h2{color:#fff;}
+  .slide.dark .sub{color:rgba(255,255,255,.65);}
+  .slide.dark .eyebrow{color:var(--ciano);}
+  .slide.green{background:linear-gradient(135deg,#0f2910,#1a4a1a);}
+  .slide.green h1, .slide.green h2{color:#fff;}
+</style>
+</head>
+<body>
+
+<!-- ════════ SLIDE 1 — CAPA ════════ -->
+<div class="slide dark" data-document-role="page" data-label="Capa — Marketing 360">
+  <div style="display:flex;flex-direction:column;justify-content:center;height:100%;max-width:1600px;">
+    <div style="display:inline-block;background:rgba(0,180,204,.15);border:1px solid rgba(0,180,204,.3);border-radius:30px;padding:14px 28px;font-size:18px;font-weight:700;color:var(--ciano);margin-bottom:40px;width:fit-content;">Roteiro de Aula — Edição Definitiva v5</div>
+    <h1 style="font-size:84px;margin-bottom:36px;">Marketing 360 para<br><em style="font-style:italic;">Laboratórios de Prótese</em></h1>
+    <p class="sub" style="font-size:30px;max-width:1400px;margin-bottom:64px;">A aula que transforma um bom laboratório invisível em um laboratório que dentistas encontram, confiam e recomendam. Com dados, histórias reais e ação concreta para a semana seguinte.</p>
+    <div style="display:flex;gap:28px;">
+      <div style="background:rgba(255,255,255,.07);border-radius:16px;padding:32px 36px;flex:1;">
+        <div style="font-size:16px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Público</div>
+        <div style="font-size:26px;font-weight:700;color:#fff;">Donos e TPDs</div>
+      </div>
+      <div style="background:rgba(255,255,255,.07);border-radius:16px;padding:32px 36px;flex:1;">
+        <div style="font-size:16px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Canais</div>
+        <div style="font-size:26px;font-weight:700;color:#fff;">7 cobertos com dados</div>
+      </div>
+      <div style="background:rgba(255,255,255,.07);border-radius:16px;padding:32px 36px;flex:1;">
+        <div style="font-size:16px;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px;">Método</div>
+        <div style="font-size:26px;font-weight:700;color:#fff;">Provocação → História → Prática → Compromisso</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ════════ SLIDE 2 — CENA REAL ════════ -->
+<div class="slide" data-document-role="page" data-label="Cena Real — Abertura">
+  <div style="background:var(--azul);border-radius:24px;padding:56px 64px;">
+    <div style="font-size:16px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--ciano);margin-bottom:28px;">🔥 Agora mesmo — enquanto você lê isso</div>
+    <div style="display:flex;flex-direction:column;gap:18px;">
+      <p style="font-size:26px;color:#fff;line-height:1.5;">Tem um dentista na sua cidade <em>pegando o celular agora.</em></p>
+      <p style="font-size:26px;color:#fff;line-height:1.5;">Ele digita: <strong style="color:var(--ciano);">"laboratório de prótese dental em [sua cidade]".</strong></p>
+      <p style="font-size:26px;color:#fff;line-height:1.5;">Ele está olhando para a tela. <em>Seu laboratório não aparece.</em></p>
+      <p style="font-size:26px;color:#fff;line-height:1.5;">Ele rola a página. Vê o concorrente. Clica. Gosta do que vê. Manda mensagem.</p>
+      <p style="font-size:26px;color:#fff;line-height:1.5;">Você não vai saber que isso aconteceu. <em>Você está produzindo</em> — para os mesmos 8 clientes de sempre.</p>
+      <p style="font-size:26px;color:#fff;line-height:1.5;"><strong>Isso não vai acontecer uma vez. Vai acontecer essa semana. E na semana que vem. E no mês que vem.</strong></p>
+    </div>
+    <div style="margin-top:32px;background:rgba(0,180,204,.12);border-radius:14px;padding:24px 28px;">
+      <p style="font-size:20px;color:var(--ciano);font-weight:600;line-height:1.5;">Essa aula existe para que da próxima vez que esse dentista pesquisar — seja o seu laboratório que ele encontre.</p>
+    </div>
+  </div>
+  <div class="slide-num">02</div>
+</div>
+
+<!-- ════════ SLIDE 3 — MERCADO QUE ESTÁ CRESCENDO ════════ -->
+<div class="slide" data-document-role="page" data-label="O mercado que está crescendo">
+  <div class="eyebrow" style="color:var(--azul-m);">📊 O mercado que está crescendo — sem esperar por você</div>
+  <h1 style="margin-bottom:48px;">Números que mostram a oportunidade real</h1>
+
+  <div style="display:flex;gap:24px;margin-bottom:32px;">
+    <div style="flex:1;background:var(--ciano-c);border-radius:18px;padding:44px 36px;text-align:center;">
+      <div style="font-family:'Fraunces',serif;font-size:56px;font-weight:900;color:var(--azul);margin-bottom:14px;">450mil</div>
+      <div style="font-size:19px;color:var(--texto);line-height:1.5;">dentistas ativos no Brasil — maior número do mundo</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:16px;">CFO, outubro 2025</div>
+    </div>
+    <div style="flex:1;background:var(--ciano-c);border-radius:18px;padding:44px 36px;text-align:center;">
+      <div style="font-family:'Fraunces',serif;font-size:56px;font-weight:900;color:var(--azul);margin-bottom:14px;">+4%</div>
+      <div style="font-size:19px;color:var(--texto);line-height:1.5;">ao ano de novos dentistas entrando no mercado</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:16px;">CFO / eapgoias.com.br, 2025</div>
+    </div>
+    <div style="flex:1;background:var(--ciano-c);border-radius:18px;padding:44px 36px;text-align:center;">
+      <div style="font-family:'Fraunces',serif;font-size:56px;font-weight:900;color:var(--azul);margin-bottom:14px;">149mil</div>
+      <div style="font-size:19px;color:var(--texto);line-height:1.5;">especialistas — o público que mais paga bem para o lab</div>
+      <div style="font-size:14px;color:var(--cinza-texto);margin-top:16px;">CFO, junho 2025</div>
+    </div>
+  </div>
+
+  <div style="background:var(--azul);border-radius:16px;padding:32px 36px;">
+    <p style="font-size:22px;color:#fff;line-height:1.6;">São <strong style="color:var(--ciano);">+18 mil dentistas novos por ano</strong> no Brasil. Cada um deles vai precisar de um laboratório. A questão não é se eles vão encontrar algum lab — é se vão encontrar <strong style="color:var(--ciano);">o seu.</strong></p>
+  </div>
+  <div class="slide-num">03</div>
+</div>
+
+<!-- ════════ SLIDE 4 — O INIMIGO ════════ -->
+<div class="slide dark" data-document-role="page" data-label="O inimigo externo">
+  <div class="eyebrow">⚔️ Quem está ganhando os dentistas que deveriam ser seus</div>
+  <h1 style="margin-bottom:40px;">O concorrente que você não está vendo</h1>
+
+  <div style="background:rgba(220,38,38,.1);border:1px solid rgba(220,38,38,.3);border-radius:20px;padding:48px 52px;">
+    <div style="display:flex;flex-direction:column;gap:22px;">
+      <p style="font-size:25px;color:rgba(255,255,255,.9);line-height:1.6;">Em alguma cidade próxima — talvez na mesma que você — existe um laboratório que <strong style="color:#fff;">tecnicamente não é melhor do que o seu.</strong></p>
+      <p style="font-size:25px;color:rgba(255,255,255,.9);line-height:1.6;">Mas ele aparece no Google. Tem 80 avaliações com nota 4,9. Posta resultado de peças toda semana no Instagram. Quando um dentista novo chega na cidade, é <em>esse lab</em> que aparece primeiro.</p>
+      <p style="font-size:25px;color:rgba(255,255,255,.9);line-height:1.6;">Ele não ganhou por ser melhor. Ele ganhou porque <strong style="color:#fca5a5;">ficou visível enquanto você ficou invisível.</strong> Essa aula existe para mudar esse cenário.</p>
+    </div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">04</div>
+</div>
+
+<!-- ════════ SLIDE 5 — CONHEÇA O JOÃO ════════ -->
+<div class="slide" data-document-role="page" data-label="Conheça o João">
+  <div class="eyebrow" style="color:var(--roxo);">👤 Conheça o João — e veja se você se reconhece nele</div>
+
+  <div style="display:flex;gap:28px;align-items:flex-start;margin-bottom:28px;padding:36px 40px;background:var(--fundo);border-radius:18px;">
+    <div style="width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--azul-m),var(--roxo));display:flex;align-items:center;justify-content:center;font-size:42px;flex-shrink:0;">🧑‍🔬</div>
+    <div>
+      <div style="font-size:14px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--roxo);margin-bottom:8px;">Personagem da aula</div>
+      <div style="font-size:26px;font-weight:700;color:var(--azul);margin-bottom:14px;">João — TPD há 15 anos, dono de laboratório</div>
+      <div style="font-size:19px;color:var(--texto);line-height:1.6;">João é excelente. Tecnicamente impecável. Os dentistas que trabalham com ele adoram o resultado — prazo cumprido, peça com ajuste perfeito, zero retrabalho. Ele tem <strong style="color:var(--azul);">8 dentistas clientes</strong>. Os mesmos 8 há 6 anos. Faturamento estável. Nunca cresceu. Toda vez que tenta marketing, <strong>não funciona</strong> — e ele volta para "marketing não é para laboratório".</div>
+    </div>
+  </div>
+
+  <div style="background:var(--roxo-c);border-radius:16px;padding:32px 36px;">
+    <p style="font-size:19px;color:var(--roxo);line-height:1.6;">Em cada canal desta aula, você vai ver <strong>"a história do João"</strong> — onde ele errou primeiro, qual objeção tinha, e o que mudou quando tentou de forma diferente. No final, você constrói seu próprio mapa de prioridade.</p>
+  </div>
+  <div class="slide-num">05</div>
+</div>
+
+<!-- ════════ SLIDE 6 — ÉTICA: CABEÇALHO + CRO ════════ -->
+<div class="slide green" data-document-role="page" data-label="Ética — Cabeçalho e CRO">
+  <div class="eyebrow" style="color:#4ade80;">⚖️ Antes de começar — laboratório, TPD e CFO</div>
+  <h1 style="margin-bottom:8px;font-style:italic;">"Posso fazer todo esse marketing sem problema com o CFO?"</h1>
+  <p class="sub" style="margin-bottom:40px;max-width:1500px;">Sim — <strong style="color:#fff;">desde que você conheça as regras.</strong> Esta seção resume o que o Código de Ética Odontológico diz sobre laboratórios e TPDs, dois casos reais de labs autuados, e as 4 regras que te dão liberdade total dentro da lei.</p>
+
+  <div style="background:rgba(255,255,255,.07);border-radius:18px;padding:36px 40px;">
+    <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--ciano);margin-bottom:16px;">📋 Ponto 1 — Laboratório é regulado pelo CRO?</div>
+    <p style="font-size:21px;color:rgba(255,255,255,.85);line-height:1.6;margin-bottom:16px;">Sim. Laboratório de prótese é obrigado a se inscrever no CRO da sua jurisdição — isso está no Decreto 87.689/1982. O TPD e o laboratório como pessoa jurídica têm inscrições separadas e obrigações separadas.</p>
+    <p style="font-size:21px;color:#fff;font-weight:600;line-height:1.5;">Lab sem inscrição no CRO está irregular e sujeito a interdição — independentemente da qualidade técnica do trabalho.</p>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">06</div>
+</div>
+
+<!-- ════════ SLIDE 7 — ÉTICA: TABELA PODE/NÃO PODE ════════ -->
+<div class="slide" data-document-role="page" data-label="Ética — Tabela pode e não pode">
+  <div class="eyebrow" style="color:var(--azul-m);">📋 Ponto 2 — Art. 41 do Código de Ética</div>
+  <h2 style="margin-bottom:8px;">O que o laboratório pode e não pode</h2>
+  <p style="font-size:19px;color:var(--texto);margin-bottom:32px;max-width:1600px;">A regra central: laboratório pode fazer publicidade <strong style="color:var(--azul);">para dentistas.</strong> Não pode fazer publicidade <strong style="color:var(--vermelho);">para pacientes.</strong></p>
+
+  <div style="display:flex;gap:24px;">
+    <div style="flex:1;background:var(--verde-c);border-radius:18px;padding:32px 36px;">
+      <div style="font-size:17px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--verde);margin-bottom:20px;">✅ Pode</div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="font-size:18px;color:#14532d;display:flex;gap:12px;"><span>✓</span>Instagram com linguagem técnica para dentistas</div>
+        <div style="font-size:18px;color:#14532d;display:flex;gap:12px;"><span>✓</span>Portfólio de peças e bastidores do processo produtivo</div>
+        <div style="font-size:18px;color:#14532d;display:flex;gap:12px;"><span>✓</span>Conteúdo educativo para cirurgiões-dentistas</div>
+        <div style="font-size:18px;color:#14532d;display:flex;gap:12px;"><span>✓</span>Propaganda em eventos e revistas especializadas</div>
+        <div style="font-size:18px;color:#14532d;display:flex;gap:12px;"><span>✓</span>Foto da peça protética — coroa, prótese, o trabalho em si</div>
+      </div>
+    </div>
+    <div style="flex:1;background:var(--vermelho-c);border-radius:18px;padding:32px 36px;">
+      <div style="font-size:17px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--vermelho);margin-bottom:20px;">❌ Não pode</div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div style="font-size:18px;color:#7f1d1d;display:flex;gap:12px;"><span>✗</span>Post vendendo prótese com preço direto ao paciente</div>
+        <div style="font-size:18px;color:#7f1d1d;display:flex;gap:12px;"><span>✗</span>Anúncio em grupos de classificados (OLX, Facebook Marketplace)</div>
+        <div style="font-size:18px;color:#7f1d1d;display:flex;gap:12px;"><span>✗</span>Rede de indicação remunerada captando paciente direto</div>
+        <div style="font-size:18px;color:#7f1d1d;display:flex;gap:12px;"><span>✗</span>Atendimento direto ao paciente sem encaminhamento</div>
+        <div style="font-size:18px;color:#7f1d1d;display:flex;gap:12px;"><span>✗</span>Foto do resultado clínico na boca do paciente</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">07</div>
+</div>
+
+<!-- ════════ SLIDE 8 — ÉTICA: RESOLUÇÃO 196 + OBRIGATÓRIO ════════ -->
+<div class="slide" data-document-role="page" data-label="Ética — Resolução 196 e obrigatório">
+  <div class="eyebrow" style="color:var(--laranja);">⚠️ Ponto 3 — O detalhe que quase ninguém sabe</div>
+  <h2 style="margin-bottom:32px;">Resolução CFO 196/2019</h2>
+
+  <div style="background:var(--fundo);border-radius:16px;padding:32px 36px;margin-bottom:28px;border-left:6px solid var(--laranja);">
+    <p style="font-size:20px;color:var(--texto);line-height:1.6;margin-bottom:14px;">Essa resolução liberou antes/depois nas redes sociais. Mas <strong style="color:var(--azul);">apenas para o dentista que realizou o procedimento, no perfil pessoal dele.</strong></p>
+    <p style="font-size:20px;color:var(--texto);line-height:1.6;margin-bottom:14px;">O laboratório <strong style="color:var(--vermelho);">não pode postar foto do resultado clínico na boca do paciente</strong> — nem com autorização do dentista parceiro, nem com TCLE.</p>
+    <p style="font-size:21px;color:var(--azul);font-weight:700;">O laboratório posta a peça. Nunca a boca.</p>
+  </div>
+
+  <div style="background:#fff;border:1px solid var(--borda);border-radius:16px;padding:32px 36px;">
+    <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--azul);margin-bottom:16px;">📋 Ponto 4 — Obrigatório em TODA publicação do laboratório</div>
+    <p style="font-size:17px;color:var(--texto);margin-bottom:18px;">Vale para Instagram, WhatsApp Business, site, e-mail, panfleto, anúncio — qualquer canal:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;">
+      <div style="background:var(--ciano-c);border-radius:10px;padding:16px 18px;font-size:18px;font-weight:600;color:var(--azul-m);display:flex;gap:12px;align-items:center;"><span>🏷️</span>Nome do laboratório</div>
+      <div style="background:var(--ciano-c);border-radius:10px;padding:16px 18px;font-size:18px;font-weight:600;color:var(--azul-m);display:flex;gap:12px;align-items:center;"><span>👤</span>Nome do responsável técnico</div>
+      <div style="background:var(--ciano-c);border-radius:10px;padding:16px 18px;font-size:18px;font-weight:600;color:var(--azul-m);display:flex;gap:12px;align-items:center;"><span>🪪</span>Número de inscrição no CRO</div>
+      <div style="background:var(--ciano-c);border-radius:10px;padding:16px 18px;font-size:18px;font-weight:600;color:var(--azul-m);display:flex;gap:12px;align-items:center;"><span>📌</span>Título: "Técnico em Prótese Dentária"</div>
+    </div>
+    <p style="font-size:16px;color:var(--vermelho);font-weight:600;margin-top:16px;">Publicação sem esses dados já é infração ética — mesmo que o conteúdo seja totalmente correto.</p>
+  </div>
+  <div class="slide-num">08</div>
+</div>
+
+<!-- ════════ SLIDE 9 — ÉTICA: CASOS REAIS ════════ -->
+<div class="slide" data-document-role="page" data-label="Ética — Casos reais autuados">
+  <div class="eyebrow" style="color:var(--vermelho);">🔴 Casos reais de laboratórios autuados</div>
+  <h2 style="margin-bottom:36px;">O que aconteceu e por quê</h2>
+
+  <div style="display:flex;flex-direction:column;gap:18px;">
+    <div style="background:var(--fundo);border-radius:16px;padding:28px 32px;">
+      <div style="display:flex;gap:16px;align-items:center;margin-bottom:14px;">
+        <div style="background:var(--vermelho);color:#fff;border-radius:8px;padding:6px 14px;font-size:15px;font-weight:700;white-space:nowrap;">Caso 1 · BH · CRO-MG</div>
+        <div style="font-size:19px;font-weight:700;color:var(--azul);">Laboratório interditado em Belo Horizonte</div>
+      </div>
+      <p style="font-size:17px;color:var(--texto);line-height:1.6;margin-bottom:10px;">Lab operando sem inscrição no CRO e sem dados obrigatórios nas publicidades. Foi notificado pelo CRO-MG. Não regularizou após reiteradas notificações. <strong style="color:var(--azul);">Resultado: interdição total das atividades.</strong></p>
+      <div style="background:var(--vermelho-c);border-radius:10px;padding:14px 18px;font-size:16px;color:#7f1d1d;font-weight:600;">Motivo: lab sem registro no CRO + publicidades sem identificação obrigatória do RT.</div>
+    </div>
+    <div style="background:var(--fundo);border-radius:16px;padding:28px 32px;">
+      <div style="display:flex;gap:16px;align-items:center;margin-bottom:14px;">
+        <div style="background:var(--vermelho);color:#fff;border-radius:8px;padding:6px 14px;font-size:15px;font-weight:700;white-space:nowrap;">Caso 2 · RN · CRO-RN</div>
+        <div style="font-size:19px;font-weight:700;color:var(--azul);">Processo criminal — venda de prótese via Facebook</div>
+      </div>
+      <p style="font-size:17px;color:var(--texto);line-height:1.6;margin-bottom:10px;">Protético divulgava próteses a partir de R$150 em grupos de Facebook e OLX, com atendimento em domicílio e rede de vendedoras recebendo comissão. O CRO-RN instaurou investigação e o caso virou processo criminal — exercício ilegal da profissão, Art. 282 do Código Penal.</p>
+      <div style="display:flex;gap:14px;">
+        <div style="background:var(--vermelho-c);border-radius:10px;padding:14px 18px;font-size:16px;color:#7f1d1d;font-weight:600;flex:1;">Motivo: publicidade para paciente + preço + venda direta + captação remunerada.</div>
+        <div style="background:#1a0a0a;border-radius:10px;padding:14px 18px;font-size:16px;color:#fca5a5;font-weight:600;flex:1;">Pena prevista: 6 meses a 2 anos de detenção + multa.</div>
+      </div>
+    </div>
+  </div>
+  <div class="slide-num">09</div>
+</div>
+
+<!-- ════════ SLIDE 10 — ÉTICA: PENALIDADES + AS 4 REGRAS ════════ -->
+<div class="slide" data-document-role="page" data-label="Ética — Penalidades e as 4 regras">
+  <div class="eyebrow" style="color:var(--texto);">⚠️ As penalidades em ordem crescente</div>
+  <div style="display:flex;align-items:center;gap:0;flex-wrap:wrap;row-gap:10px;margin-bottom:16px;">
+    <div style="background:#f1f5f9;border-radius:10px;padding:14px 20px;font-size:16px;color:var(--texto);font-weight:600;">Advertência confidencial</div>
+    <div style="font-size:20px;color:var(--borda);padding:0 10px;">→</div>
+    <div style="background:#fef3c7;border-radius:10px;padding:14px 20px;font-size:16px;color:#92400e;font-weight:600;">Censura confidencial</div>
+    <div style="font-size:20px;color:var(--borda);padding:0 10px;">→</div>
+    <div style="background:#fed7aa;border-radius:10px;padding:14px 20px;font-size:16px;color:#7c2d12;font-weight:600;">Censura pública</div>
+    <div style="font-size:20px;color:var(--borda);padding:0 10px;">→</div>
+    <div style="background:var(--vermelho-c);border-radius:10px;padding:14px 20px;font-size:16px;color:#7f1d1d;font-weight:600;">Suspensão até 30 dias</div>
+    <div style="font-size:20px;color:var(--borda);padding:0 10px;">→</div>
+    <div style="background:#1a0a0a;border-radius:10px;padding:14px 20px;font-size:16px;color:#fca5a5;font-weight:700;">Cassação do registro</div>
+  </div>
+  <p style="font-size:17px;color:var(--texto);margin-bottom:36px;">+ Multa de até <strong style="color:var(--vermelho);">25x o valor da anuidade.</strong> Dono, responsável técnico e pessoa jurídica <strong style="color:var(--azul);">respondem solidariamente.</strong></p>
+
+  <div style="background:linear-gradient(135deg,#0f2910,#1a4a1a);border-radius:18px;padding:36px 40px;">
+    <div style="font-size:16px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:#4ade80;margin-bottom:20px;">✅ As 4 regras que te dão liberdade total</div>
+    <div style="display:flex;flex-direction:column;gap:14px;">
+      <div style="background:rgba(255,255,255,.07);border-radius:12px;padding:18px 22px;font-size:18px;color:rgba(255,255,255,.88);display:flex;gap:16px;align-items:center;"><div style="background:#4ade80;color:#0f2910;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">1</div>Seu laboratório está inscrito no CRO e com o cadastro atualizado</div>
+      <div style="background:rgba(255,255,255,.07);border-radius:12px;padding:18px 22px;font-size:18px;color:rgba(255,255,255,.88);display:flex;gap:16px;align-items:center;"><div style="background:#4ade80;color:#0f2910;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">2</div>Todo material tem: nome do lab + nome do RT + nº CRO + título "TPD"</div>
+      <div style="background:rgba(255,255,255,.07);border-radius:12px;padding:18px 22px;font-size:18px;color:rgba(255,255,255,.88);display:flex;gap:16px;align-items:center;"><div style="background:#4ade80;color:#0f2910;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">3</div>O conteúdo fala com o dentista — nunca com o paciente</div>
+      <div style="background:rgba(255,255,255,.07);border-radius:12px;padding:18px 22px;font-size:18px;color:rgba(255,255,255,.88);display:flex;gap:16px;align-items:center;"><div style="background:#4ade80;color:#0f2910;width:30px;height:30px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">4</div>Você posta a peça — nunca o resultado clínico na boca do paciente</div>
+    </div>
+    <p style="font-size:18px;color:#4ade80;font-weight:700;margin-top:18px;">Dentro dessas 4 regras: Instagram, WhatsApp, Google, Site — tudo liberado.</p>
+  </div>
+  <div class="slide-num">10</div>
+</div>
+
+<!-- ════════ SLIDE 11 — MATRIZ DE PRIORIZAÇÃO ════════ -->
+<div class="slide" data-document-role="page" data-label="Matriz de Priorização">
+  <div class="eyebrow" style="color:var(--roxo);">🗺️ Seu mapa de prioridade</div>
+  <h2 style="margin-bottom:16px;">Não existe "use todos ao mesmo tempo"</h2>
+  <p style="font-size:19px;color:var(--texto);margin-bottom:24px;max-width:1600px;line-height:1.5;">Existe o <strong style="color:var(--azul);">canal certo para onde você está agora.</strong> Posicione os 6 canais de acordo com sua realidade — e saia com 1 ação concreta para amanhã.</p>
+
+  <div style="display:flex;flex-wrap:wrap;gap:12px;margin-bottom:28px;">
+    <span style="background:var(--fundo);border:1px solid var(--borda);border-radius:10px;padding:12px 18px;font-size:17px;font-weight:600;color:var(--azul);">1 · 📸 Instagram</span>
+    <span style="background:var(--fundo);border:1px solid var(--borda);border-radius:10px;padding:12px 18px;font-size:17px;font-weight:600;color:var(--azul);">2 · 💬 WhatsApp Business</span>
+    <span style="background:var(--fundo);border:1px solid var(--borda);border-radius:10px;padding:12px 18px;font-size:17px;font-weight:600;color:var(--azul);">3 · 📍 Google Meu Negócio</span>
+    <span style="background:var(--fundo);border:1px solid var(--borda);border-radius:10px;padding:12px 18px;font-size:17px;font-weight:600;color:var(--azul);">4 · 🌐 Site + SEO</span>
+    <span style="background:var(--fundo);border:1px solid var(--borda);border-radius:10px;padding:12px 18px;font-size:17px;font-weight:600;color:var(--azul);">5 · 🎤 Presencial / Eventos</span>
+    <span style="background:var(--fundo);border:1px solid var(--borda);border-radius:10px;padding:12px 18px;font-size:17px;font-weight:600;color:var(--azul);">6 · 🎯 Tráfego Pago (avançado)</span>
+  </div>
+
+  <div style="display:grid;grid-template-columns:1fr 1fr;gap:24px;flex:1;align-items:stretch;">
+    <div style="background:var(--verde-c);border-radius:18px;padding:44px 40px;border:2px dashed var(--verde);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:25px;font-weight:700;color:var(--verde);margin-bottom:14px;">🟢 FAÇA AGORA</div>
+      <div style="font-size:20px;color:#14532d;line-height:1.5;">Alto impacto + fácil de começar esta semana</div>
+      <div style="margin-top:20px;border-bottom:2px dashed rgba(22,163,74,.4);height:40px;"></div>
+    </div>
+    <div style="background:var(--ciano-c);border-radius:18px;padding:44px 40px;border:2px dashed var(--ciano);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:25px;font-weight:700;color:var(--azul-m);margin-bottom:14px;">🔵 PLANEJE</div>
+      <div style="font-size:20px;color:var(--azul-m);line-height:1.5;">Alto impacto + precisa de estrutura antes</div>
+      <div style="margin-top:20px;border-bottom:2px dashed rgba(0,180,204,.4);height:40px;"></div>
+    </div>
+    <div style="background:#fff7ed;border-radius:18px;padding:44px 40px;border:2px dashed var(--laranja);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:25px;font-weight:700;color:var(--laranja);margin-bottom:14px;">🟡 PRÓXIMO PASSO</div>
+      <div style="font-size:20px;color:#7c2d12;line-height:1.5;">Médio impacto + fácil de ativar em seguida</div>
+      <div style="margin-top:20px;border-bottom:2px dashed rgba(234,88,12,.4);height:40px;"></div>
+    </div>
+    <div style="background:#f1f5f9;border-radius:18px;padding:44px 40px;border:2px dashed var(--cinza-texto);display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:25px;font-weight:700;color:var(--texto);margin-bottom:14px;">⚪ CONSTRUA DEVAGAR</div>
+      <div style="font-size:20px;color:var(--texto);line-height:1.5;">Longo prazo — comece a coletar dados agora</div>
+      <div style="margin-top:20px;border-bottom:2px dashed rgba(138,147,160,.4);height:40px;"></div>
+    </div>
+  </div>
+  <div class="slide-num">11</div>
+</div>
+
+<!-- ════════ SLIDE 12 — REFLEXÃO FINAL ════════ -->
+<div class="slide" data-document-role="page" data-label="Reflexão final e compromisso">
+  <div class="eyebrow" style="color:var(--roxo);">✍ A pergunta que encerra a aula</div>
+  <h1 style="margin-bottom:36px;font-size:42px;">Qual é o canal que você está em <em>zero hoje</em> e que traria mais resultado na <em>próxima semana?</em></h1>
+
+  <div style="display:flex;flex-direction:column;gap:12px;">
+    <div style="background:var(--fundo);border-radius:12px;padding:18px 24px;font-size:18px;color:var(--texto);display:flex;gap:16px;align-items:center;"><div style="background:var(--roxo);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">1</div>Atualizar o Google Meu Negócio e pedir avaliação para os dentistas atuais hoje</div>
+    <div style="background:var(--fundo);border-radius:12px;padding:18px 24px;font-size:18px;color:var(--texto);display:flex;gap:16px;align-items:center;"><div style="background:var(--roxo);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">2</div>Migrar para WhatsApp Business e postar a primeira foto de peça no status amanhã</div>
+    <div style="background:var(--fundo);border-radius:12px;padding:18px 24px;font-size:18px;color:var(--texto);display:flex;gap:16px;align-items:center;"><div style="background:var(--roxo);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">3</div>Criar o perfil do lab no Instagram e publicar a primeira foto técnica esta semana</div>
+    <div style="background:var(--fundo);border-radius:12px;padding:18px 24px;font-size:18px;color:var(--texto);display:flex;gap:16px;align-items:center;"><div style="background:var(--roxo);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">4</div>Gravar o primeiro Reel de processo no laboratório em 30 segundos — ainda hoje</div>
+    <div style="background:var(--fundo);border-radius:12px;padding:18px 24px;font-size:18px;color:var(--texto);display:flex;gap:16px;align-items:center;"><div style="background:var(--roxo);color:#fff;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:15px;font-weight:700;flex-shrink:0;">5</div>Marcar uma visita presencial para um dentista que você nunca visitou</div>
+  </div>
+
+  <div style="background:var(--roxo-c);border-radius:16px;padding:28px 32px;margin-top:24px;">
+    <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--roxo);margin-bottom:16px;">✍ Meu compromisso ao sair desta aula</div>
+    <div style="display:flex;flex-direction:column;gap:12px;">
+      <div style="border-bottom:2px dashed var(--roxo);height:36px;"></div>
+      <div style="border-bottom:2px dashed var(--roxo);height:36px;"></div>
+    </div>
+  </div>
+  <div class="slide-num">12</div>
+</div>
+
+<!-- ════════ SLIDE 13 — OS 3 PILARES ════════ -->
+<div class="slide" data-document-role="page" data-label="Os 3 pilares">
+  <div class="eyebrow">🏛️ Síntese</div>
+  <h1 style="margin-bottom:48px;">Os 3 pilares que sustentam tudo</h1>
+
+  <div style="display:flex;gap:28px;flex:1;align-items:stretch;">
+    <div style="flex:1;background:var(--fundo);border-radius:18px;padding:44px 36px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:56px;margin-bottom:20px;">🏆</div>
+      <div style="font-size:24px;font-weight:700;color:var(--azul);margin-bottom:16px;">Autoridade Técnica</div>
+      <p style="font-size:18px;color:var(--texto);line-height:1.6;">O dentista precisa te enxergar como especialista antes de te contratar. Conteúdo técnico é o caminho.</p>
+    </div>
+    <div style="flex:1;background:var(--fundo);border-radius:18px;padding:44px 36px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:56px;margin-bottom:20px;">🤝</div>
+      <div style="font-size:24px;font-weight:700;color:var(--azul);margin-bottom:16px;">Relacionamento Ativo</div>
+      <p style="font-size:18px;color:var(--texto);line-height:1.6;">WhatsApp, visitas, eventos. O laboratório que o dentista conhece pessoalmente é o último que ele troca.</p>
+    </div>
+    <div style="flex:1;background:var(--fundo);border-radius:18px;padding:44px 36px;text-align:center;display:flex;flex-direction:column;justify-content:center;">
+      <div style="font-size:56px;margin-bottom:20px;">🔍</div>
+      <div style="font-size:24px;font-weight:700;color:var(--azul);margin-bottom:16px;">Presença Encontrável</div>
+      <p style="font-size:18px;color:var(--texto);line-height:1.6;">Google, site e Instagram. Quando o dentista buscar, você precisa aparecer e convencer em segundos.</p>
+    </div>
+  </div>
+  <div class="slide-num">13</div>
+</div>
+
+<!-- ════════ SLIDE 14 — AVISO SEMANA 3 ════════ -->
+<div class="slide dark" data-document-role="page" data-label="Aviso semana 3">
+  <div class="eyebrow" style="color:var(--amarelo);">⏱ O que vai acontecer na semana 3 — e por que você não pode parar</div>
+  <h1 style="margin-bottom:32px;">O momento em que 80% desiste</h1>
+
+  <div style="display:flex;flex-direction:column;gap:18px;">
+    <p style="font-size:23px;color:rgba(255,255,255,.85);line-height:1.6;">Na semana 3 você vai achar que não está funcionando. O Instagram vai ter 47 seguidores. O Google vai ter 4 avaliações. Nenhum dentista novo entrou em contato.</p>
+    <p style="font-size:25px;color:#fff;font-weight:700;line-height:1.6;">Isso é normal. É exatamente aí que 80% desiste.</p>
+    <p style="font-size:23px;color:rgba(255,255,255,.85);line-height:1.6;">Marketing de laboratório não funciona em semanas — funciona em meses. O Google começa a ranquear depois de 60–90 dias. O Instagram começa a gerar contato espontâneo entre o mês 2 e o mês 3. O WhatsApp reativa clientes inativos quando o status vira hábito.</p>
+  </div>
+
+  <div style="margin-top:32px;background:rgba(245,200,66,.1);border:1px solid rgba(245,200,66,.3);border-radius:16px;padding:28px 32px;">
+    <p style="font-size:22px;color:var(--amarelo);font-weight:700;line-height:1.5;">A diferença entre quem cresce e quem fica estagnado não é talento. É consistência no período em que parece não estar funcionando.</p>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">14</div>
+</div>
+
+<!-- ════════ SLIDE 15 — MÉTRICAS POR CANAL ════════ -->
+<div class="slide" data-document-role="page" data-label="Métricas por canal">
+  <div class="eyebrow">📈 Como saber se está funcionando</div>
+  <h2 style="margin-bottom:36px;">1 métrica por canal — simples de acompanhar</h2>
+
+  <div style="border:1px solid var(--borda);border-radius:16px;overflow:hidden;">
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;background:var(--azul);padding:20px 28px;gap:20px;">
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.6);">Canal</div>
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.6);">Indicador que você acompanha</div>
+      <div style="font-size:15px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:rgba(255,255,255,.6);">Meta inicial</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;padding:22px 28px;gap:20px;border-bottom:1px solid var(--borda);align-items:center;">
+      <div style="font-size:19px;font-weight:600;color:var(--azul);">📸 Instagram</div>
+      <div style="font-size:18px;color:var(--texto);">Quantos DMs de dentistas novos chegaram este mês</div>
+      <div style="font-size:19px;font-weight:700;color:var(--verde);">1 por mês</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;padding:22px 28px;gap:20px;border-bottom:1px solid var(--borda);align-items:center;background:var(--fundo);">
+      <div style="font-size:19px;font-weight:600;color:var(--azul);">💬 WhatsApp</div>
+      <div style="font-size:18px;color:var(--texto);">Quantos dentistas visualizaram o status esta semana</div>
+      <div style="font-size:19px;font-weight:700;color:var(--verde);">80% dos contatos</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;padding:22px 28px;gap:20px;border-bottom:1px solid var(--borda);align-items:center;">
+      <div style="font-size:19px;font-weight:600;color:var(--azul);">📍 Google</div>
+      <div style="font-size:18px;color:var(--texto);">Quantas ligações ou mensagens vieram do perfil</div>
+      <div style="font-size:19px;font-weight:700;color:var(--verde);">2 por mês</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;padding:22px 28px;gap:20px;border-bottom:1px solid var(--borda);align-items:center;background:var(--fundo);">
+      <div style="font-size:19px;font-weight:600;color:var(--azul);">🎤 Presencial</div>
+      <div style="font-size:18px;color:var(--texto);">Quantos contatos novos saíram de eventos ou visitas</div>
+      <div style="font-size:19px;font-weight:700;color:var(--verde);">4 por mês</div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 2fr 1fr;padding:22px 28px;gap:20px;align-items:center;">
+      <div style="font-size:19px;font-weight:600;color:var(--azul);">🌐 Site</div>
+      <div style="font-size:18px;color:var(--texto);">Quantas mensagens ou formulários chegaram pelo site</div>
+      <div style="font-size:19px;font-weight:700;color:var(--verde);">1 por mês</div>
+    </div>
+  </div>
+  <div class="slide-num">15</div>
+</div>
+
+<!-- ════════ SLIDE 16 — COMO USAR A TABELA ════════ -->
+<div class="slide" data-document-role="page" data-label="Como usar a tabela de métricas">
+  <div style="background:var(--ciano-c);border-radius:24px;padding:64px 72px;">
+    <div style="font-size:18px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--azul-m);margin-bottom:28px;">📊 Como usar essa tabela</div>
+    <p style="font-size:30px;color:var(--azul);line-height:1.7;font-family:'Fraunces',serif;">Uma vez por mês, anote os números reais ao lado de cada meta. Se um canal está abaixo da meta por <strong>3 meses seguidos</strong> — não abandone, ajuste.</p>
+    <div style="margin-top:36px;background:rgba(255,255,255,.6);border-radius:16px;padding:32px 36px;">
+      <p style="font-size:25px;color:var(--azul-m);line-height:1.6;">A pergunta não é <em>"está funcionando?"</em> — é <strong>"o que eu posso mudar para funcionar melhor?"</strong></p>
+    </div>
+  </div>
+  <div class="slide-num">16</div>
+</div>
+
+<!-- ════════ SLIDE 17 — FRASE FINAL (ENCERRAMENTO DA AULA) ════════ -->
+<div class="slide dark" data-document-role="page" data-label="Frase final — encerramento da aula">
+  <div style="display:flex;flex-direction:column;justify-content:center;align-items:center;height:100%;text-align:center;max-width:1500px;margin:0 auto;">
+    <p style="font-family:'Fraunces',serif;font-size:40px;font-style:italic;color:#fff;line-height:1.6;margin-bottom:40px;">"O João não ficou melhor tecnicamente. Ele só ficou <em style="color:var(--ciano);">visível.</em> E visibilidade, no mercado de prótese, é a diferença entre crescer e estagnar — enquanto o concorrente ganha os dentistas que deveriam ser seus."</p>
+    <div style="font-size:18px;color:rgba(255,255,255,.5);letter-spacing:1px;text-transform:uppercase;">— Lição central desta aula</div>
+  </div>
+  <div class="slide-num" style="color:rgba(255,255,255,.4);">17</div>
+</div>
+
+</body>
+</html>
